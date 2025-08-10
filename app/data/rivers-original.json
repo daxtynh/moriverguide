@@ -1,0 +1,346 @@
+{
+  "rivers": [
+    {
+      "id": "current-river",
+      "name": "Current River",
+      "slug": "current-river",
+      "description": "Missouri&apos;s most popular float trip destination with crystal-clear spring-fed waters",
+      "longDescription": "The Current River is Missouri&apos;s crown jewel for float trips, offering 134 miles of pristine, spring-fed waters perfect for beginners and families. Known for its crystal-clear water, scenic bluffs, and numerous caves, the Current River provides an unforgettable floating experience through the heart of the Ozarks.",
+      "difficulty": "Beginner to Intermediate",
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "length": "134 miles",
+      "averageDepth": "3-6 feet",
+      "waterTemp": "58-65°F year-round",
+      "features": [
+        "Crystal clear spring-fed water",
+        "Big Spring - one of America&apos;s largest springs",
+        "Numerous caves and bluffs",
+        "Excellent fishing for smallmouth bass",
+        "Family-friendly rapids"
+      ],
+      "popularSections": [
+        {
+          "name": "Baptist Camp to Big Spring",
+          "distance": "8.5 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner"
+        },
+        {
+          "name": "Akers Ferry to Pulltite",
+          "distance": "8 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner"
+        },
+        {
+          "name": "Welch Spring to Akers Ferry",
+          "distance": "6 miles",
+          "time": "3-4 hours",
+          "difficulty": "Intermediate"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Akers Ferry",
+          "lat": 37.1234,
+          "lng": -91.4567,
+          "amenities": ["Parking", "Restrooms", "Camping"],
+          "address": "Akers Ferry Rd, Salem, MO 65560"
+        },
+        {
+          "name": "Big Spring",
+          "lat": 36.9567,
+          "lng": -91.0123,
+          "amenities": ["Parking", "Restrooms", "Visitor Center", "Camping"],
+          "address": "Big Spring Scenic Drive, Van Buren, MO 63965"
+        },
+        {
+          "name": "Pulltite",
+          "lat": 37.2345,
+          "lng": -91.3456,
+          "amenities": ["Parking", "Restrooms", "Camping"],
+          "address": "Pulltite Rd, Jadwin, MO 65501"
+        }
+      ],
+      "waterLevel": {
+        "current": 3.2,
+        "optimal": "2.5-4.0 feet",
+        "status": "excellent"
+      },
+      "crowdLevel": "moderate",
+      "searchVolume": 2900,
+      "competitionLevel": "LOW"
+    },
+    {
+      "id": "meramec-river",
+      "name": "Meramec River",
+      "slug": "meramec-river",
+      "description": "Close to St. Louis with easy access and beautiful scenery",
+      "longDescription": "The Meramec River offers 218 miles of diverse floating opportunities, from peaceful family floats to exciting whitewater sections. Located just outside St. Louis, it&apos;s the perfect destination for day trips and weekend adventures. The river features numerous caves, springs, and scenic bluffs.",
+      "difficulty": "Beginner to Advanced",
+      "bestMonths": ["April", "May", "June", "July", "August", "September"],
+      "length": "218 miles",
+      "averageDepth": "2-8 feet",
+      "waterTemp": "55-75°F seasonal",
+      "features": [
+        "Close to St. Louis metro area",
+        "Meramec Caverns nearby",
+        "Excellent smallmouth bass fishing",
+        "Multiple difficulty levels available",
+        "Beautiful limestone bluffs"
+      ],
+      "popularSections": [
+        {
+          "name": "Meramec State Park Section",
+          "distance": "7 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner"
+        },
+        {
+          "name": "Steelville to Bird&apos;s Nest",
+          "distance": "12 miles",
+          "time": "5-6 hours",
+          "difficulty": "Intermediate"
+        },
+        {
+          "name": "Scotia to Steelville",
+          "distance": "10 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Meramec State Park",
+          "lat": 38.2067,
+          "lng": -91.0975,
+          "amenities": ["Parking", "Restrooms", "Camping", "Visitor Center"],
+          "address": "115 Meramec Park Dr, Sullivan, MO 63080"
+        },
+        {
+          "name": "Steelville Access",
+          "lat": 37.9681,
+          "lng": -91.3546,
+          "amenities": ["Parking", "Restrooms"],
+          "address": "Highway 8, Steelville, MO 65565"
+        }
+      ],
+      "waterLevel": {
+        "current": 2.8,
+        "optimal": "2.0-5.0 feet",
+        "status": "good"
+      },
+      "crowdLevel": "low",
+      "searchVolume": 1600,
+      "competitionLevel": "VERY LOW"
+    },
+    {
+      "id": "niangua-river",
+      "name": "Niangua River",
+      "slug": "niangua-river",
+      "description": "Hidden gem with spring-fed waters and fewer crowds",
+      "longDescription": "The Niangua River is a hidden gem in the Missouri Ozarks, offering crystal-clear spring-fed waters with fewer crowds than other popular rivers. Perfect for those seeking a more peaceful float experience while still enjoying beautiful scenery and excellent fishing opportunities.",
+      "difficulty": "Beginner to Intermediate",
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "length": "95 miles",
+      "averageDepth": "2-5 feet",
+      "waterTemp": "58-68°F",
+      "features": [
+        "Bennett Spring State Park",
+        "Ha Ha Tonka Spring",
+        "Less crowded than other rivers",
+        "Excellent trout fishing",
+        "Family-friendly rapids"
+      ],
+      "popularSections": [
+        {
+          "name": "Bennett Spring to Prosperine",
+          "distance": "9 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner"
+        },
+        {
+          "name": "NRO to Boiling Spring",
+          "distance": "7 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Bennett Spring",
+          "lat": 37.7264,
+          "lng": -92.8574,
+          "amenities": ["Parking", "Restrooms", "Camping", "Store"],
+          "address": "26250 Highway 64A, Lebanon, MO 65536"
+        }
+      ],
+      "waterLevel": {
+        "current": 2.5,
+        "optimal": "2.0-4.0 feet",
+        "status": "excellent"
+      },
+      "crowdLevel": "low",
+      "searchVolume": 1000,
+      "competitionLevel": "LOW"
+    },
+    {
+      "id": "jacks-fork-river",
+      "name": "Jacks Fork River",
+      "slug": "jacks-fork-river",
+      "description": "Scenic tributary of the Current River with exciting rapids",
+      "longDescription": "Jacks Fork River joins the Current River and offers some of the most scenic and exciting floating in Missouri. With crystal-clear waters, spectacular bluffs, and fun rapids, it&apos;s perfect for intermediate paddlers looking for adventure.",
+      "difficulty": "Intermediate",
+      "bestMonths": ["April", "May", "June", "July"],
+      "length": "45 miles",
+      "averageDepth": "2-4 feet",
+      "waterTemp": "58-65°F",
+      "features": [
+        "Jam Up Cave",
+        "Exciting Class II rapids",
+        "Crystal clear water",
+        "Remote and scenic",
+        "Less crowded sections"
+      ],
+      "popularSections": [
+        {
+          "name": "Jam Up Cave to Eminence",
+          "distance": "8 miles",
+          "time": "4-5 hours",
+          "difficulty": "Intermediate"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Alley Spring",
+          "lat": 37.1458,
+          "lng": -91.4432,
+          "amenities": ["Parking", "Restrooms", "Camping"],
+          "address": "Alley Spring Rd, Eminence, MO 65466"
+        }
+      ],
+      "waterLevel": {
+        "current": 2.1,
+        "optimal": "1.5-3.0 feet",
+        "status": "good"
+      },
+      "crowdLevel": "low",
+      "searchVolume": 590,
+      "competitionLevel": "VERY LOW"
+    },
+    {
+      "id": "eleven-point-river",
+      "name": "Eleven Point River",
+      "slug": "eleven-point-river",
+      "description": "Wild and scenic river with pristine waters",
+      "longDescription": "The Eleven Point River is one of Missouri&apos;s most pristine waterways, designated as a National Wild and Scenic River. It offers exceptional water quality, diverse wildlife, and a true wilderness experience for those seeking solitude and natural beauty.",
+      "difficulty": "Beginner to Intermediate",
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "length": "44 miles in Missouri",
+      "averageDepth": "3-6 feet",
+      "waterTemp": "55-65°F",
+      "features": [
+        "National Wild & Scenic River designation",
+        "Greer Spring - 2nd largest in Missouri",
+        "Exceptional water quality",
+        "Remote wilderness experience",
+        "Excellent fishing"
+      ],
+      "popularSections": [
+        {
+          "name": "Greer to Riverton",
+          "distance": "18 miles",
+          "time": "7-8 hours",
+          "difficulty": "Intermediate"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Greer Crossing",
+          "lat": 36.7892,
+          "lng": -91.3476,
+          "amenities": ["Parking", "Primitive Camping"],
+          "address": "Greer Crossing Rd, Alton, MO 65606"
+        }
+      ],
+      "waterLevel": {
+        "current": 3.5,
+        "optimal": "3.0-5.0 feet",
+        "status": "excellent"
+      },
+      "crowdLevel": "very low",
+      "searchVolume": 320,
+      "competitionLevel": "VERY LOW"
+    },
+    {
+      "id": "elk-river",
+      "name": "Elk River",
+      "slug": "elk-river",
+      "description": "Beautiful clear water river perfect for beginners and families",
+      "longDescription": "The Elk River is one of Missouri&apos;s hidden gems, offering crystal-clear waters and gentle currents perfect for families and first-time floaters. Located in southwest Missouri near Noel, it&apos;s known for its stunning clarity, peaceful atmosphere, and excellent facilities. The river maintains consistent water levels throughout the season thanks to spring feeding.",
+      "difficulty": "Beginner",
+      "bestMonths": ["April", "May", "June", "July", "August", "September", "October"],
+      "length": "15 miles floatable",
+      "averageDepth": "2-5 feet",
+      "waterTemp": "60-70°F",
+      "features": [
+        "Crystal clear spring-fed water",
+        "Gentle current perfect for beginners",
+        "Scenic limestone bluffs",
+        "Family-friendly with no rapids",
+        "Excellent facilities and camping",
+        "Consistent water levels"
+      ],
+      "popularSections": [
+        {
+          "name": "Pineville to Noel",
+          "distance": "6 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner"
+        },
+        {
+          "name": "Noel to Highway 59 Bridge",
+          "distance": "8 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner"
+        },
+        {
+          "name": "Full Day Float",
+          "distance": "12 miles",
+          "time": "6-7 hours",
+          "difficulty": "Beginner"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Pineville Access",
+          "lat": 36.5943,
+          "lng": -94.3828,
+          "amenities": ["Parking", "Restrooms", "Boat Ramp"],
+          "address": "Pineville, MO 64856"
+        },
+        {
+          "name": "Noel Access",
+          "lat": 36.5458,
+          "lng": -94.4852,
+          "amenities": ["Parking", "Restrooms", "Camping", "Store"],
+          "address": "Elk River Access, Noel, MO 64854"
+        },
+        {
+          "name": "Highway 59 Bridge",
+          "lat": 36.4982,
+          "lng": -94.5234,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Highway 59, Southwest City, MO 64863"
+        }
+      ],
+      "waterLevel": {
+        "current": 2.9,
+        "optimal": "2.5-4.0 feet",
+        "status": "excellent"
+      },
+      "crowdLevel": "moderate",
+      "searchVolume": 480,
+      "competitionLevel": "LOW"
+    }
+  ]
+}

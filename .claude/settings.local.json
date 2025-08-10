@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__dataforseo__dataforseo_labs_google_keyword_overview",
+      "mcp__dataforseo__dataforseo_labs_bulk_keyword_difficulty",
+      "mcp__dataforseo__dataforseo_labs_google_keyword_suggestions",
+      "mcp__dataforseo__dataforseo_labs_google_related_keywords",
+      "mcp__dataforseo__dataforseo_labs_google_serp_competitors",
+      "mcp__dataforseo__dataforseo_labs_google_keyword_ideas",
+      "mcp__dataforseo__keywords_data_google_ads_search_volume",
+      "mcp__dataforseo__serp_organic_live_advanced",
+      "Bash(npm uninstall:*)",
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}

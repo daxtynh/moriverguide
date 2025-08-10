@@ -1,0 +1,960 @@
+{
+  "rivers": [
+    {
+      "id": "current-river",
+      "name": "Current River",
+      "slug": "current-river",
+      "description": "Missouri's most popular float trip destination with crystal-clear spring-fed waters",
+      "longDescription": "The Current River is Missouri's crown jewel for float trips, offering 184 miles of pristine, spring-fed waters perfect for beginners and families. Known for its crystal-clear water maintained at 58-60°F year-round by six major springs, scenic limestone bluffs, and numerous caves. Big Spring in Van Buren delivers 286 million gallons daily, making it one of the world's largest springs.",
+      "difficulty": "Beginner to Intermediate",
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "length": "184 miles total",
+      "averageDepth": "3-6 feet",
+      "waterTemp": "58-60°F year-round",
+      "features": [
+        "Crystal clear spring-fed water",
+        "Big Spring - one of America's largest springs (286 million gallons/day)",
+        "Blue Spring, Welch Spring, and Alley Spring",
+        "Numerous caves and limestone bluffs",
+        "Excellent smallmouth bass fishing",
+        "Part of Ozark National Scenic Riverways"
+      ],
+      "popularSections": [
+        {
+          "name": "Baptist Camp to Cedargrove",
+          "distance": "12 miles",
+          "time": "5-6 hours",
+          "difficulty": "Beginner",
+          "putIn": "Baptist Camp Access",
+          "takeOut": "Cedargrove Access"
+        },
+        {
+          "name": "Akers Ferry to Pulltite",
+          "distance": "10 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Akers Ferry",
+          "takeOut": "Pulltite Spring",
+          "notes": "Considered one of the best single day floats"
+        },
+        {
+          "name": "Pulltite to Round Spring",
+          "distance": "16 miles",
+          "time": "6-8 hours",
+          "difficulty": "Intermediate",
+          "putIn": "Pulltite Spring",
+          "takeOut": "Round Spring"
+        },
+        {
+          "name": "Round Spring to Two Rivers",
+          "distance": "14 miles",
+          "time": "5-7 hours",
+          "difficulty": "Beginner",
+          "putIn": "Round Spring",
+          "takeOut": "Two Rivers"
+        },
+        {
+          "name": "Big Spring to Van Buren",
+          "distance": "4 miles",
+          "time": "2-3 hours",
+          "difficulty": "Beginner",
+          "putIn": "Big Spring",
+          "takeOut": "Van Buren Landing"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Baptist Camp Access",
+          "lat": 37.4467,
+          "lng": -91.7428,
+          "amenities": ["Parking", "Restrooms", "Picnic Area"],
+          "address": "Off Highway E, north of Salem, MO",
+          "notes": "Water levels must be adequate for floating"
+        },
+        {
+          "name": "Cedargrove Access",
+          "lat": 37.3892,
+          "lng": -91.6431,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Highway KK, Dent County, MO"
+        },
+        {
+          "name": "Akers Ferry",
+          "lat": 37.3728,
+          "lng": -91.5681,
+          "amenities": ["Parking", "Restrooms", "Camping", "Store"],
+          "address": "Akers Ferry Rd, off Highway K, Salem, MO 65560"
+        },
+        {
+          "name": "Pulltite Spring",
+          "lat": 37.3000,
+          "lng": -91.4667,
+          "amenities": ["Parking", "Restrooms", "Camping", "Spring"],
+          "address": "Off Highway E, Shannon County, MO"
+        },
+        {
+          "name": "Round Spring",
+          "lat": 37.2850,
+          "lng": -91.4131,
+          "amenities": ["Parking", "Restrooms", "Camping", "Cave Tours", "Visitor Center"],
+          "address": "Highway 19, 13 miles north of Eminence, MO"
+        },
+        {
+          "name": "Two Rivers Junction",
+          "lat": 37.1506,
+          "lng": -91.3571,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Near Eminence, MO",
+          "notes": "Where Jacks Fork meets Current River"
+        },
+        {
+          "name": "Pin Oak Access",
+          "lat": 37.0331,
+          "lng": -91.1083,
+          "amenities": ["Parking"],
+          "address": "9 miles northwest of Van Buren, MO",
+          "notes": "Loading/unloading only"
+        },
+        {
+          "name": "Big Spring",
+          "lat": 36.9556,
+          "lng": -91.1078,
+          "amenities": ["Parking", "Restrooms", "Picnic Area", "Visitor Center", "Lodging"],
+          "address": "County Road 60-203, 4 miles south of Van Buren, MO 63965"
+        },
+        {
+          "name": "Van Buren Landing",
+          "lat": 36.9917,
+          "lng": -91.0142,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms"],
+          "address": "Water St at Highway 60 Bridge, Van Buren, MO 63965"
+        }
+      ],
+      "waterLevel": {
+        "current": 3.5,
+        "optimal": "3-7 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Moderate"
+    },
+    {
+      "id": "jacks-fork-river",
+      "name": "Jacks Fork River",
+      "slug": "jacks-fork-river",
+      "description": "Scenic tributary of the Current River with excellent swimming holes",
+      "longDescription": "The Jacks Fork River is one of Missouri's most scenic rivers, protected by the Ozark National Scenic Riverways. This beautiful river features alternating pools and riffles, towering bluffs, and numerous springs including the stunning Alley Spring. The river offers excellent opportunities for swimming, fishing, and wildlife viewing.",
+      "difficulty": "Beginner to Intermediate",
+      "bestMonths": ["April", "May", "June", "July", "August", "September"],
+      "length": "45 miles floatable",
+      "averageDepth": "2-5 feet",
+      "waterTemp": "58-65°F",
+      "features": [
+        "Alley Spring Mill historic site",
+        "Clear spring-fed water",
+        "Scenic limestone bluffs",
+        "Deep swimming holes",
+        "Part of Ozark National Scenic Riverways",
+        "Jam Up Cave"
+      ],
+      "popularSections": [
+        {
+          "name": "Buck Hollow to Rymers",
+          "distance": "8 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Buck Hollow (Highway 17)",
+          "takeOut": "Rymers Access"
+        },
+        {
+          "name": "Alley Spring to Eminence",
+          "distance": "7 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner",
+          "putIn": "Alley Spring",
+          "takeOut": "Highway 19 Bridge Eminence"
+        },
+        {
+          "name": "Eminence to Two Rivers",
+          "distance": "8 miles",
+          "time": "4-5 hours",
+          "difficulty": "Intermediate",
+          "putIn": "Highway 19 Bridge",
+          "takeOut": "Two Rivers Junction"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Buck Hollow Access",
+          "lat": 37.2456,
+          "lng": -91.5678,
+          "amenities": ["Parking", "Primitive Camping"],
+          "address": "Highway 17, Texas County, MO"
+        },
+        {
+          "name": "Rymers Access",
+          "lat": 37.1978,
+          "lng": -91.5234,
+          "amenities": ["Parking"],
+          "address": "Off Highway V, Shannon County, MO"
+        },
+        {
+          "name": "Alley Spring",
+          "lat": 37.1433,
+          "lng": -91.4468,
+          "amenities": ["Parking", "Restrooms", "Picnic Area", "Historic Mill", "Store"],
+          "address": "Highway 106, 6 miles west of Eminence, MO"
+        },
+        {
+          "name": "Eminence Access",
+          "lat": 37.1506,
+          "lng": -91.3571,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms"],
+          "address": "Highway 19 Bridge, Eminence, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 2.8,
+        "optimal": "2-4.5 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low to Moderate"
+    },
+    {
+      "id": "meramec-river",
+      "name": "Meramec River",
+      "slug": "meramec-river",
+      "description": "Popular river close to St. Louis with beautiful spring and state park",
+      "longDescription": "The Meramec River is one of Missouri's longest free-flowing waterways, offering 218 miles of diverse floating opportunities. Fed by Maramec Spring which produces 96 million gallons daily, the river features mostly Class I rapids perfect for families. The most popular section runs between the spring and Meramec State Park.",
+      "difficulty": "Beginner",
+      "bestMonths": ["April", "May", "June", "July", "August", "September", "October"],
+      "length": "218 miles",
+      "averageDepth": "2-6 feet",
+      "waterTemp": "65-75°F summer",
+      "features": [
+        "Maramec Spring Park",
+        "Meramec State Park with 40+ caves",
+        "Close to St. Louis (1 hour)",
+        "Excellent smallmouth bass fishing",
+        "Fisher Cave tours",
+        "Green's Cave (Missouri's second longest)"
+      ],
+      "popularSections": [
+        {
+          "name": "Maramec Spring to Meramec State Park",
+          "distance": "7 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner",
+          "putIn": "Maramec Spring Park",
+          "takeOut": "Meramec State Park"
+        },
+        {
+          "name": "Steelville to Bird's Nest",
+          "distance": "8 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Steelville Access",
+          "takeOut": "Bird's Nest Access"
+        },
+        {
+          "name": "Campbell Bridge to Sappington Bridge",
+          "distance": "12 miles",
+          "time": "5-6 hours",
+          "difficulty": "Beginner",
+          "putIn": "Campbell Bridge",
+          "takeOut": "Sappington Bridge"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Maramec Spring Park",
+          "lat": 38.0744,
+          "lng": -91.1173,
+          "amenities": ["Parking", "Restrooms", "Store", "Trout Fishing", "Museum"],
+          "address": "21880 Maramec Spring Dr, St. James, MO 65559"
+        },
+        {
+          "name": "Meramec State Park",
+          "lat": 38.2028,
+          "lng": -91.0948,
+          "amenities": ["Parking", "Boat Ramp", "Camping", "Cabins", "Beach", "Cave Tours"],
+          "address": "Highway 185, Sullivan, MO 63080"
+        },
+        {
+          "name": "Campbell Bridge Access",
+          "lat": 38.1567,
+          "lng": -91.1234,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Campbell Bridge Rd, Crawford County, MO"
+        },
+        {
+          "name": "Sappington Bridge Access",
+          "lat": 38.2234,
+          "lng": -91.0567,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Sappington Bridge Rd, Franklin County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 4.2,
+        "optimal": "3-8 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Moderate to High"
+    },
+    {
+      "id": "niangua-river",
+      "name": "Niangua River",
+      "slug": "niangua-river",
+      "description": "Spring-fed river famous for trout fishing at Bennett Spring",
+      "longDescription": "The Niangua River is one of Missouri's best fishing streams, closely associated with Bennett Spring State Park and its trout hatchery. The river offers excellent rainbow and brown trout fishing, peaceful floating, and beautiful Ozark scenery. The spring maintains consistent water levels and cool temperatures ideal for trout.",
+      "difficulty": "Beginner",
+      "bestMonths": ["March", "April", "May", "June", "July", "August", "September", "October"],
+      "length": "60 miles floatable",
+      "averageDepth": "2-5 feet",
+      "waterTemp": "55-65°F",
+      "features": [
+        "Bennett Spring State Park",
+        "Excellent trout fishing",
+        "Spring-fed consistent flow",
+        "Ha Ha Tonka State Park nearby",
+        "Lead Mine Conservation Area",
+        "Moon Valley access"
+      ],
+      "popularSections": [
+        {
+          "name": "Bennett Spring to Barclay",
+          "distance": "7 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner",
+          "putIn": "Bennett Spring Public Access",
+          "takeOut": "Barclay Public Access"
+        },
+        {
+          "name": "Moon Valley to Bennett Spring",
+          "distance": "9 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Moon Valley Access",
+          "takeOut": "Bennett Spring"
+        },
+        {
+          "name": "Barclay to Prosperine",
+          "distance": "11 miles",
+          "time": "5-6 hours",
+          "difficulty": "Beginner",
+          "putIn": "Barclay Access",
+          "takeOut": "Prosperine Access"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Bennett Spring State Park",
+          "lat": 37.7208,
+          "lng": -92.8547,
+          "amenities": ["Parking", "Restrooms", "Camping", "Store", "Trout Hatchery", "Swimming Pool"],
+          "address": "26250 Highway 64A, Lebanon, MO 65536"
+        },
+        {
+          "name": "Barclay Public Access",
+          "lat": 37.6789,
+          "lng": -92.8234,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Highway 64, Dallas County, MO"
+        },
+        {
+          "name": "Moon Valley Access",
+          "lat": 37.7456,
+          "lng": -92.8901,
+          "amenities": ["Parking", "Primitive Camping"],
+          "address": "Moon Valley Rd, Laclede County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 3.1,
+        "optimal": "2.5-6 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low to Moderate"
+    },
+    {
+      "id": "eleven-point-river",
+      "name": "Eleven Point River",
+      "slug": "eleven-point-river",
+      "description": "Wild and Scenic River with pristine waters and remote floating",
+      "longDescription": "The Eleven Point River is one of America's original eight Wild and Scenic Rivers, offering 44 miles of protected waterway. The river features alternating rapids and deep pools cutting through steep bluffs and forested valleys. Known for exceptional water quality and solitude, it's perfect for those seeking a wilderness experience.",
+      "difficulty": "Intermediate",
+      "bestMonths": ["April", "May", "June", "July", "August", "September"],
+      "length": "44 miles designated Wild & Scenic",
+      "averageDepth": "3-8 feet",
+      "waterTemp": "60-70°F",
+      "features": [
+        "National Wild and Scenic River designation",
+        "Greer Spring - 2nd largest in Missouri",
+        "Remote wilderness floating",
+        "Excellent smallmouth bass fishing",
+        "Blue Spring",
+        "Turner Mill historic site"
+      ],
+      "popularSections": [
+        {
+          "name": "Thomasville to Greer Crossing",
+          "distance": "18 miles",
+          "time": "7-9 hours",
+          "difficulty": "Intermediate",
+          "putIn": "Thomasville Access",
+          "takeOut": "Greer Crossing"
+        },
+        {
+          "name": "Greer to Riverton",
+          "distance": "15 miles",
+          "time": "6-8 hours",
+          "difficulty": "Intermediate",
+          "putIn": "Greer Access",
+          "takeOut": "Riverton Access"
+        },
+        {
+          "name": "Riverton to Highway 142",
+          "distance": "11 miles",
+          "time": "5-6 hours",
+          "difficulty": "Beginner",
+          "putIn": "Riverton Access",
+          "takeOut": "Highway 142 Bridge"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Thomasville Access",
+          "lat": 36.7833,
+          "lng": -91.5333,
+          "amenities": ["Parking", "Primitive Camping"],
+          "address": "Highway 99, Oregon County, MO"
+        },
+        {
+          "name": "Greer Crossing",
+          "lat": 36.7939,
+          "lng": -91.3468,
+          "amenities": ["Parking", "Camping", "Spring Access"],
+          "address": "Highway 19, Oregon County, MO"
+        },
+        {
+          "name": "Riverton Access",
+          "lat": 36.7234,
+          "lng": -91.2345,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Highway 160, Oregon County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 4.1,
+        "optimal": "2.5-6 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low"
+    },
+    {
+      "id": "gasconade-river",
+      "name": "Gasconade River",
+      "slug": "gasconade-river",
+      "description": "Missouri's longest river with diverse scenery and excellent fishing",
+      "longDescription": "The Gasconade River is Missouri's longest river at 280 miles, offering diverse floating experiences from swift riffles to long pools. The river flows through the scenic Missouri Ozarks, featuring limestone bluffs, caves, and excellent fishing for smallmouth bass, rock bass, and goggle-eye.",
+      "difficulty": "Beginner to Intermediate",
+      "bestMonths": ["April", "May", "June", "July", "August", "September"],
+      "length": "280 miles",
+      "averageDepth": "2-6 feet",
+      "waterTemp": "65-75°F summer",
+      "features": [
+        "Missouri's longest river",
+        "Limestone bluffs and caves",
+        "Excellent smallmouth bass fishing",
+        "Historic Hazelgreen Access",
+        "Jerome Bridge",
+        "Rollins Ferry"
+      ],
+      "popularSections": [
+        {
+          "name": "Jerome to Rollins Ferry",
+          "distance": "7 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner",
+          "putIn": "Jerome Access",
+          "takeOut": "Rollins Ferry"
+        },
+        {
+          "name": "Hazelgreen to Jerome",
+          "distance": "12 miles",
+          "time": "5-6 hours",
+          "difficulty": "Intermediate",
+          "putIn": "Hazelgreen Access",
+          "takeOut": "Jerome Access"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Hazelgreen Access",
+          "lat": 37.7234,
+          "lng": -92.0456,
+          "amenities": ["Parking", "Camping"],
+          "address": "Highway 7, Laclede County, MO"
+        },
+        {
+          "name": "Jerome Access",
+          "lat": 37.9234,
+          "lng": -91.9678,
+          "amenities": ["Parking", "Boat Ramp", "Camping"],
+          "address": "Jerome, Phelps County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 3.8,
+        "optimal": "3-7 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low"
+    },
+    {
+      "id": "big-piney-river",
+      "name": "Big Piney River",
+      "slug": "big-piney-river",
+      "description": "Peaceful river through Mark Twain National Forest",
+      "longDescription": "The Big Piney River offers easy, leisurely floats through a section of the Mark Twain National Forest. This peaceful river provides solitude for a relaxing trip, with scenic forested banks, wildlife viewing opportunities, and good fishing for smallmouth bass and rock bass.",
+      "difficulty": "Beginner",
+      "bestMonths": ["April", "May", "June", "July", "August", "September"],
+      "length": "85 miles floatable",
+      "averageDepth": "2-5 feet",
+      "waterTemp": "65-75°F summer",
+      "features": [
+        "Mark Twain National Forest",
+        "Peaceful, uncrowded floating",
+        "Wildlife viewing",
+        "Smallmouth bass fishing",
+        "Scenic forested banks",
+        "Dog Bluff Access"
+      ],
+      "popularSections": [
+        {
+          "name": "Dog Bluff to Ross Bridge",
+          "distance": "8 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Dog Bluff Access",
+          "takeOut": "Ross Bridge"
+        },
+        {
+          "name": "Ross Bridge to Mason Bridge",
+          "distance": "10 miles",
+          "time": "5-6 hours",
+          "difficulty": "Beginner",
+          "putIn": "Ross Bridge",
+          "takeOut": "Mason Bridge"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Dog Bluff Access",
+          "lat": 37.5678,
+          "lng": -92.1234,
+          "amenities": ["Parking", "Primitive Camping"],
+          "address": "Forest Road, Texas County, MO"
+        },
+        {
+          "name": "Ross Bridge Access",
+          "lat": 37.6234,
+          "lng": -92.0567,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Highway 17, Texas County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 2.9,
+        "optimal": "2-5 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Very Low"
+    },
+    {
+      "id": "black-river",
+      "name": "Black River",
+      "slug": "black-river",
+      "description": "Clear waters with Class II rapids and swimming holes",
+      "longDescription": "The Black River offers some of Missouri's most exciting whitewater, including Class II rapids during higher water levels. The river features crystal-clear water, deep swimming holes, and scenic shut-ins. Popular sections include the challenging Lesterville area and the more peaceful lower stretches.",
+      "difficulty": "Intermediate to Advanced",
+      "bestMonths": ["March", "April", "May", "June"],
+      "length": "90 miles floatable",
+      "averageDepth": "2-6 feet",
+      "waterTemp": "60-70°F",
+      "features": [
+        "Class II rapids (seasonal)",
+        "Johnson's Shut-Ins State Park nearby",
+        "Crystal clear water",
+        "Deep swimming holes",
+        "Rocky shut-ins",
+        "Taum Sauk Mountain nearby"
+      ],
+      "popularSections": [
+        {
+          "name": "Lesterville to Sutton Bluff",
+          "distance": "12 miles",
+          "time": "5-7 hours",
+          "difficulty": "Intermediate",
+          "putIn": "Lesterville Access",
+          "takeOut": "Sutton Bluff"
+        },
+        {
+          "name": "Sutton Bluff to Clearwater Dam",
+          "distance": "15 miles",
+          "time": "6-8 hours",
+          "difficulty": "Beginner",
+          "putIn": "Sutton Bluff",
+          "takeOut": "Clearwater Lake"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Lesterville Access",
+          "lat": 37.4567,
+          "lng": -90.8234,
+          "amenities": ["Parking", "Camping"],
+          "address": "Highway 21, Reynolds County, MO"
+        },
+        {
+          "name": "Sutton Bluff",
+          "lat": 37.3456,
+          "lng": -90.7123,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "County Road, Reynolds County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 3.2,
+        "optimal": "3-6 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low to Moderate"
+    },
+    {
+      "id": "huzzah-creek",
+      "name": "Huzzah Creek",
+      "slug": "huzzah-creek",
+      "description": "Popular creek near St. Louis with swimming holes",
+      "longDescription": "Huzzah Creek is a popular floating destination just an hour from St. Louis. This scenic creek offers clear water, numerous swimming holes, and gentle rapids perfect for families. The creek flows through the scenic Huzzah Valley with towering bluffs and gravel bars ideal for picnicking.",
+      "difficulty": "Beginner",
+      "bestMonths": ["May", "June", "July", "August"],
+      "length": "23 miles floatable",
+      "averageDepth": "1-4 feet",
+      "waterTemp": "65-75°F summer",
+      "features": [
+        "Close to St. Louis",
+        "Family-friendly rapids",
+        "Swimming holes",
+        "Gravel bars for picnicking",
+        "Scenic bluffs",
+        "Popular tubing destination"
+      ],
+      "popularSections": [
+        {
+          "name": "Scotia to Dillard Mill",
+          "distance": "6 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner",
+          "putIn": "Scotia Access",
+          "takeOut": "Dillard Mill"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Scotia Access",
+          "lat": 37.8456,
+          "lng": -91.0234,
+          "amenities": ["Parking"],
+          "address": "Highway E, Crawford County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 2.1,
+        "optimal": "1.5-3 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "High (weekends)"
+    },
+    {
+      "id": "courtois-creek",
+      "name": "Courtois Creek",
+      "slug": "courtois-creek",
+      "description": "Small scenic creek with clear water and bluffs",
+      "longDescription": "Courtois Creek (pronounced 'Coat-a-way') is a beautiful small stream offering intimate floating through scenic Ozark hills. The creek features crystal-clear water, small rapids, deep pools, and limestone bluffs. It's less crowded than nearby Huzzah Creek but equally beautiful.",
+      "difficulty": "Beginner",
+      "bestMonths": ["April", "May", "June", "July"],
+      "length": "20 miles floatable",
+      "averageDepth": "1-3 feet",
+      "waterTemp": "65-72°F summer",
+      "features": [
+        "Crystal clear water",
+        "Limestone bluffs",
+        "Less crowded than Huzzah",
+        "Small rapids and pools",
+        "Wildlife viewing",
+        "Scenic Ozark hills"
+      ],
+      "popularSections": [
+        {
+          "name": "Berryman to Scotia",
+          "distance": "8 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Berryman Access",
+          "takeOut": "Scotia Access"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Berryman Access",
+          "lat": 37.9123,
+          "lng": -91.1456,
+          "amenities": ["Parking", "Primitive Camping"],
+          "address": "Berryman Rd, Washington County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 1.8,
+        "optimal": "1.5-3 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low"
+    },
+    {
+      "id": "north-fork-river",
+      "name": "North Fork River",
+      "slug": "north-fork-river",
+      "description": "Trophy trout fishing destination with cold spring waters",
+      "longDescription": "The North Fork River is Missouri's premier trophy trout fishing destination. Fed by massive Rainbow and North Fork Springs, the river maintains cold temperatures perfect for rainbow and brown trout. The river offers both excellent fishing and scenic floating through the Ozark hills.",
+      "difficulty": "Beginner",
+      "bestMonths": ["Year-round for trout", "May-September for floating"],
+      "length": "35 miles in Missouri",
+      "averageDepth": "2-6 feet",
+      "waterTemp": "52-58°F year-round",
+      "features": [
+        "Trophy trout fishing",
+        "Rainbow Spring",
+        "North Fork Spring",
+        "Year-round cold water",
+        "Twin Bridges Access",
+        "Blue ribbon trout stream"
+      ],
+      "popularSections": [
+        {
+          "name": "Rainbow Spring to Twin Bridges",
+          "distance": "9 miles",
+          "time": "4-5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Rainbow Spring",
+          "takeOut": "Twin Bridges"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Rainbow Spring",
+          "lat": 36.8901,
+          "lng": -91.9234,
+          "amenities": ["Parking", "Restrooms", "Trout Park"],
+          "address": "Highway 181, Dent County, MO"
+        },
+        {
+          "name": "Twin Bridges",
+          "lat": 36.8456,
+          "lng": -91.8567,
+          "amenities": ["Parking", "Camping"],
+          "address": "Twin Bridges Rd, Ozark County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 3.5,
+        "optimal": "3-5 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low to Moderate"
+    },
+    {
+      "id": "james-river",
+      "name": "James River",
+      "slug": "james-river",
+      "description": "Scenic river near Springfield with smallmouth bass fishing",
+      "longDescription": "The James River flows through the Springfield area offering convenient floating close to the city. The river features good smallmouth bass and goggle-eye fishing, scenic bluffs, and several low-water bridges that create fun chutes during adequate water levels.",
+      "difficulty": "Beginner",
+      "bestMonths": ["April", "May", "June", "July", "August", "September"],
+      "length": "60 miles floatable",
+      "averageDepth": "2-5 feet",
+      "waterTemp": "65-75°F summer",
+      "features": [
+        "Close to Springfield",
+        "Smallmouth bass fishing",
+        "Low-water bridges",
+        "Scenic bluffs",
+        "Hootentown Access",
+        "Kinser Bridge"
+      ],
+      "popularSections": [
+        {
+          "name": "Hootentown to Kinser Bridge",
+          "distance": "7 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner",
+          "putIn": "Hootentown Access",
+          "takeOut": "Kinser Bridge"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Hootentown Access",
+          "lat": 37.0234,
+          "lng": -93.1456,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Highway 14, Christian County, MO"
+        },
+        {
+          "name": "Kinser Bridge",
+          "lat": 36.9876,
+          "lng": -93.0789,
+          "amenities": ["Parking"],
+          "address": "Kinser Bridge Rd, Stone County, MO"
+        }
+      ],
+      "waterLevel": {
+        "current": 2.8,
+        "optimal": "2.5-5 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Moderate"
+    },
+    {
+      "id": "elk-river",
+      "name": "Elk River",
+      "slug": "elk-river",
+      "description": "Clear spring-fed river in Southwest Missouri with scenic float trips",
+      "longDescription": "The Elk River is a beautiful spring-fed stream in Southwest Missouri, known for its crystal-clear water and scenic limestone bluffs. The river offers excellent floating, swimming, and fishing opportunities with a mix of calm pools and mild rapids. Popular with families and perfect for a relaxing day on the water.",
+      "difficulty": "Beginner to Intermediate",
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "length": "50 miles floatable",
+      "averageDepth": "3-6 feet",
+      "waterTemp": "65-72°F summer",
+      "features": [
+        "Crystal clear spring-fed water",
+        "Limestone bluffs and caves",
+        "Excellent swimming holes",
+        "Good smallmouth bass fishing",
+        "Less crowded than other rivers",
+        "Scenic Ozark scenery"
+      ],
+      "popularSections": [
+        {
+          "name": "Cowskin to Pineville",
+          "distance": "6 miles",
+          "time": "2.5-3.5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Cowskin Access",
+          "takeOut": "Pineville Access"
+        },
+        {
+          "name": "Pineville to Cyclone Bridge",
+          "distance": "7 miles",
+          "time": "3-4 hours",
+          "difficulty": "Beginner",
+          "putIn": "Pineville Access",
+          "takeOut": "Cyclone Bridge Access"
+        },
+        {
+          "name": "Cyclone Bridge to Noel",
+          "distance": "6 miles",
+          "time": "2.5-3.5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Cyclone Bridge Access",
+          "takeOut": "Noel Bridge Access"
+        },
+        {
+          "name": "Noel to Ginger Blue",
+          "distance": "8 miles",
+          "time": "3.5-4.5 hours",
+          "difficulty": "Beginner",
+          "putIn": "Noel Bridge Access",
+          "takeOut": "Ginger Blue Access"
+        },
+        {
+          "name": "Full Day Float",
+          "distance": "13 miles",
+          "time": "5-7 hours",
+          "difficulty": "Intermediate",
+          "putIn": "Cowskin Access",
+          "takeOut": "Cyclone Bridge Access"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "Cowskin Access",
+          "lat": 36.6447,
+          "lng": -94.3516,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms", "Picnic Area"],
+          "address": "Cowskin Access Rd, off Highway 90, Anderson, MO 64831",
+          "notes": "MDC managed access with concrete boat ramp"
+        },
+        {
+          "name": "Pineville Access",
+          "lat": 36.5805,
+          "lng": -94.3844,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms"],
+          "address": "Highway 90 Bridge, Pineville, MO 64856",
+          "notes": "Popular put-in spot near town"
+        },
+        {
+          "name": "Cyclone Bridge Access",
+          "lat": 36.5611,
+          "lng": -94.4347,
+          "amenities": ["Parking", "Primitive Camping"],
+          "address": "Cyclone Bridge Rd, McDonald County, MO",
+          "notes": "Low water bridge, check conditions"
+        },
+        {
+          "name": "Noel Bridge Access",
+          "lat": 36.5450,
+          "lng": -94.4851,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Highway 59 Bridge at Noel, MO 64854"
+        },
+        {
+          "name": "Elk River Wayside Park",
+          "lat": 36.5389,
+          "lng": -94.4978,
+          "amenities": ["Parking", "Picnic Area", "Restrooms"],
+          "address": "Highway 59 South of Noel, MO",
+          "notes": "Nice picnic area and river access"
+        },
+        {
+          "name": "Ginger Blue Access",
+          "lat": 36.5228,
+          "lng": -94.5456,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Ginger Blue Rd, near Lanagan, MO"
+        },
+        {
+          "name": "Tiff City Bridge",
+          "lat": 36.6303,
+          "lng": -94.5878,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "Highway 43 Bridge, Tiff City, MO 64868"
+        },
+        {
+          "name": "Southwest City Access",
+          "lat": 36.5139,
+          "lng": -94.6089,
+          "amenities": ["Parking"],
+          "address": "Highway 43, Southwest City, MO 64863",
+          "notes": "Take-out only, near Arkansas border"
+        }
+      ],
+      "waterLevel": {
+        "current": 4.5,
+        "optimal": "3.5-9 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low to Moderate"
+    }
+  ]
+}
