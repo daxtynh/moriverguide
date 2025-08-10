@@ -580,6 +580,75 @@ This is a comprehensive task list for developing MoRiverGuide into Missouri's pr
 
 ---
 
+## 🔍 12. Programmatic SEO
+
+### High Priority
+- [ ] **H** - Trip Combination Pages (500+ pages potential):
+  - [ ] Generate pages for every put-in/take-out combination
+  - [ ] URL structure: `/trips/[river]/[start]-to-[end]`
+  - [ ] Include distance, float time, difficulty, amenities
+  - [ ] Add schema markup for each route
+  - [ ] Create dynamic meta descriptions
+  - [ ] Add breadcrumb navigation
+- [ ] **H** - Location-Based Landing Pages:
+  - [ ] "Float trips near [city]" pages for 50+ Missouri cities
+  - [ ] `/near/st-louis`, `/near/kansas-city`, `/near/springfield`
+  - [ ] Show rivers within driving distance
+  - [ ] Include local outfitters and access points
+  - [ ] Add local schema markup
+- [ ] **H** - Rich Snippets & Schema Implementation:
+  - [ ] FAQPage schema for common questions
+  - [ ] LocalBusiness schema for outfitters
+  - [ ] Event schema for peak seasons
+  - [ ] AggregateRating for rivers
+  - [ ] BreadcrumbList for navigation
+
+### Medium Priority
+- [ ] **M** - Seasonal/Date-Based Pages:
+  - [ ] `/best-rivers/memorial-day-weekend`
+  - [ ] `/float-trips/[month]-[year]`
+  - [ ] `/conditions/this-weekend`
+  - [ ] Auto-update based on water levels
+  - [ ] Holiday-specific guides
+- [ ] **M** - Comparison Pages:
+  - [ ] `/compare/[river1]-vs-[river2]`
+  - [ ] Side-by-side river comparisons
+  - [ ] Decision matrix for choosing rivers
+  - [ ] Difficulty comparisons
+  - [ ] Cost comparisons
+- [ ] **M** - Outfitter + River Combination Pages:
+  - [ ] `/outfitters/[river]/[outfitter-name]`
+  - [ ] `/canoe-rental/[river]`
+  - [ ] `/kayak-rental/[river]`
+  - [ ] Service-specific pages per river
+- [ ] **M** - Search Intent Variation Pages:
+  - [ ] `/rivers/[river]/beginners-guide`
+  - [ ] `/rivers/[river]/family-friendly-sections`
+  - [ ] `/rivers/[river]/camping-spots`
+  - [ ] `/rivers/[river]/fishing-access`
+  - [ ] `/rivers/[river]/swimming-holes`
+
+### Low Priority
+- [ ] **L** - Data-Driven Dynamic Content:
+  - [ ] `/water-levels/[river]/history` - Historical charts
+  - [ ] `/best-floating-conditions/today`
+  - [ ] `/rivers/low-water-friendly` - Dynamic lists
+  - [ ] Trend analysis pages
+  - [ ] Crowd prediction pages
+- [ ] **L** - User-Generated Content SEO:
+  - [ ] `/trip-reports/[river]/[date]`
+  - [ ] Photo galleries by location
+  - [ ] Reviews aggregation pages
+  - [ ] Community Q&A pages
+- [ ] **L** - Long-Tail Keyword Pages:
+  - [ ] "How to" pages for specific scenarios
+  - [ ] Problem-solving pages (scared of water, etc.)
+  - [ ] Accessibility-focused pages
+  - [ ] Pet-friendly float pages
+  - [ ] Group size specific guides
+
+---
+
 ## 📝 Notes
 
 - **Dependencies**: Some tasks depend on others being completed first
