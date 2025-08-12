@@ -85,16 +85,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Resource preloading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://waterservices.usgs.gov" />
         
         {/* Critical CSS for above-the-fold content */}
         <style dangerouslySetInnerHTML={{
           __html: `
-            body{margin:0;background-color:rgb(249 250 251);-webkit-font-smoothing:antialiased}
+            body{margin:0;background-color:rgb(249 250 251);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
             .min-h-screen{min-height:100vh}
             .relative{position:relative}
             .h-screen{height:100vh}
@@ -111,13 +108,26 @@ export default function RootLayout({
             .bg-white{background-color:white}
             .rounded-xl{border-radius:0.75rem}
             .shadow-2xl{box-shadow:0 25px 50px -12px rgba(0,0,0,0.25)}
-            .p-2{padding:0.5rem}
+            .p-4{padding:1rem}
             .max-w-3xl{max-width:48rem}
             .mx-auto{margin-left:auto;margin-right:auto}
             .grid{display:grid}
             .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
-            @media(min-width:768px){.md\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
-            .gap-2{gap:0.5rem}
+            .gap-4{gap:1rem}
+            .min-h-\\[44px\\]{min-height:44px}
+            .min-h-\\[48px\\]{min-height:48px}
+            .text-base{font-size:1rem;line-height:1.5rem}
+            .w-full{width:100%}
+            @media(min-width:768px){
+              .md\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+              .md\\:gap-2{gap:0.5rem}
+              .md\\:py-3{padding-top:0.75rem;padding-bottom:0.75rem}
+              .md\\:w-auto{width:auto}
+            }
+            @media(max-width:767px){
+              .py-4{padding-top:1rem;padding-bottom:1rem}
+              .border-0{border:0}
+            }
           `
         }} />
         

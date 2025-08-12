@@ -11,22 +11,33 @@ export default function Hero() {
   const [selectedRiver, setSelectedRiver] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedGroup, setSelectedGroup] = useState('');
+  const [isMobile, setIsMobile] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          setScrollY(window.scrollY);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    if (!isMobile) {
+      let ticking = false;
+      const handleScroll = () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            setScrollY(window.scrollY);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      };
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('resize', checkMobile);
+      };
+    }
+    return () => window.removeEventListener('resize', checkMobile);
+  }, [isMobile]);
 
   const handleFindTrips = () => {
     const params = new URLSearchParams();
@@ -43,28 +54,20 @@ export default function Hero() {
       <div 
         className="absolute inset-0"
         style={{
-          transform: `translate3d(0, ${scrollY * 0.5}px, 0)`,
-          willChange: 'transform'
+          transform: isMobile ? 'none' : `translate3d(0, ${scrollY * 0.5}px, 0)`,
+          willChange: isMobile ? 'auto' : 'transform'
         }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?q=80&w=2070&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?auto=format&fit=crop&w=1200&q=75"
           alt="Missouri River floating and kayaking"
           fill
           priority
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           className="object-cover"
           quality={75}
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-          onLoad={() => {
-            // Preload the LCP image
-            const link = document.createElement('link');
-            link.rel = 'preload';
-            link.as = 'image';
-            link.href = 'https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?q=80&w=2070&auto=format&fit=crop';
-            document.head.appendChild(link);
-          }}
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>
@@ -91,14 +94,14 @@ export default function Hero() {
           </p>
           
           {/* Quick Search Bar */}
-          <div className="bg-white rounded-xl shadow-2xl p-2 max-w-3xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
-              <div className="flex items-center px-4 py-3 border-r border-gray-200">
+          <div className="bg-white rounded-xl shadow-2xl p-4 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-2">
+              <div className="flex items-center px-4 py-4 md:py-3 border-0 md:border-r border-gray-200">
                 <MapPin className="w-5 h-5 text-river-600 mr-2" aria-hidden="true" />
                 <label htmlFor="river-select" className="sr-only">Choose River</label>
                 <select 
                   id="river-select"
-                  className="w-full outline-none text-gray-700"
+                  className="w-full outline-none text-gray-700 min-h-[44px] text-base"
                   value={selectedRiver}
                   onChange={(e) => setSelectedRiver(e.target.value)}
                   aria-label="Select a river for your trip"
@@ -113,25 +116,25 @@ export default function Hero() {
                 </select>
               </div>
               
-              <div className="flex items-center px-4 py-3 border-r border-gray-200">
+              <div className="flex items-center px-4 py-4 md:py-3 border-0 md:border-r border-gray-200">
                 <Calendar className="w-5 h-5 text-river-600 mr-2" aria-hidden="true" />
                 <label htmlFor="date-select" className="sr-only">Trip Date</label>
                 <input 
                   id="date-select"
                   type="date" 
-                  className="w-full outline-none text-gray-700"
+                  className="w-full outline-none text-gray-700 min-h-[44px] text-base"
                   value={selectedDate}
                   onChange={(e) => setSelectedDate(e.target.value)}
                   aria-label="Select your trip date"
                 />
               </div>
               
-              <div className="flex items-center px-4 py-3 border-r border-gray-200">
+              <div className="flex items-center px-4 py-4 md:py-3 border-0 md:border-r border-gray-200">
                 <Users className="w-5 h-5 text-river-600 mr-2" aria-hidden="true" />
                 <label htmlFor="group-select" className="sr-only">Group Size</label>
                 <select 
                   id="group-select"
-                  className="w-full outline-none text-gray-700"
+                  className="w-full outline-none text-gray-700 min-h-[44px] text-base"
                   value={selectedGroup}
                   onChange={(e) => setSelectedGroup(e.target.value)}
                   aria-label="Select your group size"
@@ -146,7 +149,7 @@ export default function Hero() {
               
               <button 
                 onClick={handleFindTrips} 
-                className="btn-primary rounded-lg"
+                className="btn-primary rounded-lg min-h-[48px] px-6 py-3 text-base font-semibold w-full md:w-auto"
                 aria-label="Find float trips based on your criteria"
               >
                 Find Trips
