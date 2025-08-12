@@ -8,7 +8,8 @@ const inter = Inter({
   subsets: ["latin"],
   display: 'swap',
   preload: true,
-  variable: '--font-inter'
+  variable: '--font-inter',
+  fallback: ['system-ui', 'Arial', 'sans-serif']
 });
 
 export const metadata: Metadata = {
@@ -86,8 +87,39 @@ export default function RootLayout({
         {/* Resource preloading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://waterservices.usgs.gov" />
+        
+        {/* Critical CSS for above-the-fold content */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            body{margin:0;background-color:rgb(249 250 251);-webkit-font-smoothing:antialiased}
+            .min-h-screen{min-height:100vh}
+            .relative{position:relative}
+            .h-screen{height:100vh}
+            .overflow-hidden{overflow:hidden}
+            .absolute{position:absolute}
+            .inset-0{inset:0}
+            .object-cover{object-fit:cover}
+            .z-10{z-index:10}
+            .flex{display:flex}
+            .items-center{align-items:center}
+            .justify-center{justify-content:center}
+            .text-center{text-align:center}
+            .text-white{color:white}
+            .bg-white{background-color:white}
+            .rounded-xl{border-radius:0.75rem}
+            .shadow-2xl{box-shadow:0 25px 50px -12px rgba(0,0,0,0.25)}
+            .p-2{padding:0.5rem}
+            .max-w-3xl{max-width:48rem}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .grid{display:grid}
+            .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+            @media(min-width:768px){.md\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+            .gap-2{gap:0.5rem}
+          `
+        }} />
         
         {/* Google Analytics */}
         <Script

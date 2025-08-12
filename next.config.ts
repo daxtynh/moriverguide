@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['leaflet', 'react-leaflet', 'lucide-react'],
   },
   
+  // Reduce polyfills for modern browsers
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  
   // Headers for caching and security
   async headers() {
     return [

@@ -14,8 +14,17 @@ export default function Hero() {
   const router = useRouter();
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrollY(window.scrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -34,7 +43,8 @@ export default function Hero() {
       <div 
         className="absolute inset-0"
         style={{
-          transform: `translateY(${scrollY * 0.5}px)`,
+          transform: `translate3d(0, ${scrollY * 0.5}px, 0)`,
+          willChange: 'transform'
         }}
       >
         <Image
@@ -44,9 +54,17 @@ export default function Hero() {
           priority
           sizes="100vw"
           className="object-cover"
-          quality={85}
+          quality={75}
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+          onLoad={() => {
+            // Preload the LCP image
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = 'https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?q=80&w=2070&auto=format&fit=crop';
+            document.head.appendChild(link);
+          }}
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>
