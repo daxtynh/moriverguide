@@ -28,4 +28,13 @@
   .section-padding {
     @apply px-4 md:px-6 lg:px-8 max-w-7xl mx-auto;
   }
+  
+  .animate-wave {
+    animation: wave 4s ease-in-out infinite;
+  }
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-10px); }
 }

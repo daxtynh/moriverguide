@@ -846,27 +846,20 @@
       ],
       "popularSections": [
         {
-          "name": "Cowskin to Pineville",
+          "name": "Pineville to Mt Shira/Cowskin",
           "distance": "6 miles",
           "time": "2.5-3.5 hours",
           "difficulty": "Beginner",
-          "putIn": "Cowskin Access",
-          "takeOut": "Pineville Access"
+          "putIn": "Pineville Access",
+          "takeOut": "Mt Shira / Cowskin Access",
+          "notes": "Popular family float, near Shady Beaches Floats"
         },
         {
-          "name": "Pineville to Cyclone Bridge",
+          "name": "Mt Shira/Cowskin to Noel",
           "distance": "7 miles",
           "time": "3-4 hours",
           "difficulty": "Beginner",
-          "putIn": "Pineville Access",
-          "takeOut": "Cyclone Bridge Access"
-        },
-        {
-          "name": "Cyclone Bridge to Noel",
-          "distance": "6 miles",
-          "time": "2.5-3.5 hours",
-          "difficulty": "Beginner",
-          "putIn": "Cyclone Bridge Access",
+          "putIn": "Mt Shira / Cowskin Access",
           "takeOut": "Noel Bridge Access"
         },
         {
@@ -882,54 +875,46 @@
           "distance": "13 miles",
           "time": "5-7 hours",
           "difficulty": "Intermediate",
-          "putIn": "Cowskin Access",
-          "takeOut": "Cyclone Bridge Access"
+          "putIn": "Pineville Access",
+          "takeOut": "Noel Bridge Access"
         }
       ],
       "accessPoints": [
         {
-          "name": "Cowskin Access",
-          "lat": 36.6447,
-          "lng": -94.3516,
-          "amenities": ["Parking", "Boat Ramp", "Restrooms", "Picnic Area"],
-          "address": "Cowskin Access Rd, off Highway 90, Anderson, MO 64831",
-          "notes": "MDC managed access with concrete boat ramp"
-        },
-        {
           "name": "Pineville Access",
-          "lat": 36.5805,
-          "lng": -94.3844,
+          "lat": 36.5945,
+          "lng": -94.3841,
           "amenities": ["Parking", "Boat Ramp", "Restrooms"],
           "address": "Highway 90 Bridge, Pineville, MO 64856",
           "notes": "Popular put-in spot near town"
         },
         {
-          "name": "Cyclone Bridge Access",
-          "lat": 36.5611,
-          "lng": -94.4347,
-          "amenities": ["Parking", "Primitive Camping"],
-          "address": "Cyclone Bridge Rd, McDonald County, MO",
-          "notes": "Low water bridge, check conditions"
+          "name": "Mt Shira / Cowskin Access",
+          "lat": 36.5772,
+          "lng": -94.4647,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms", "Picnic Area", "Primitive Camping"],
+          "address": "2 miles north of Noel on Highway 59, near Shady Beaches Floats",
+          "notes": "MDC managed access with concrete boat ramp and 26-acre area, located next to Shady Beaches Floats outfitter"
         },
         {
           "name": "Noel Bridge Access",
-          "lat": 36.5450,
-          "lng": -94.4851,
+          "lat": 36.5458,
+          "lng": -94.4850,
           "amenities": ["Parking", "Boat Ramp"],
           "address": "Highway 59 Bridge at Noel, MO 64854"
         },
         {
           "name": "Elk River Wayside Park",
-          "lat": 36.5389,
-          "lng": -94.4978,
+          "lat": 36.5350,
+          "lng": -94.4950,
           "amenities": ["Parking", "Picnic Area", "Restrooms"],
           "address": "Highway 59 South of Noel, MO",
           "notes": "Nice picnic area and river access"
         },
         {
           "name": "Ginger Blue Access",
-          "lat": 36.5228,
-          "lng": -94.5456,
+          "lat": 36.5150,
+          "lng": -94.5400,
           "amenities": ["Parking", "Boat Ramp"],
           "address": "Ginger Blue Rd, near Lanagan, MO"
         },
@@ -942,8 +927,8 @@
         },
         {
           "name": "Southwest City Access",
-          "lat": 36.5139,
-          "lng": -94.6089,
+          "lat": 36.5100,
+          "lng": -94.6100,
           "amenities": ["Parking"],
           "address": "Highway 43, Southwest City, MO 64863",
           "notes": "Take-out only, near Arkansas border"

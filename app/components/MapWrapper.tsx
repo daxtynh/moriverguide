@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { Search, Store, MapPin } from 'lucide-react';
@@ -32,6 +32,18 @@ export default function MapWrapper({ showAccessPointsOnly = false, initialRiver 
     { id: 'access-points', name: 'Access Points', visible: true, color: '#10B981' },
     { id: 'outfitters', name: 'Outfitters', visible: !showAccessPointsOnly, color: '#8B5CF6' },
   ]);
+
+  // Load Leaflet CSS only when this component mounts
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    document.head.appendChild(link);
+    
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
 
   const toggleLayer = (layerId: string) => {
     setMapLayers(prev => prev.map(layer => 

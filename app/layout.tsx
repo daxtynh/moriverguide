@@ -2,10 +2,14 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-import 'leaflet/dist/leaflet.css';
 import Header from './components/Header';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  variable: '--font-inter'
+});
 
 export const metadata: Metadata = {
   title: "MoRiverGuide | Missouri River Conditions, Trip Planner & Kayaking Guide",
@@ -79,6 +83,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Resource preloading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://waterservices.usgs.gov" />
+        
         {/* Google Analytics */}
         <Script
           async

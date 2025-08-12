@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { ChevronDown, MapPin, Calendar, Users } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -31,12 +32,24 @@ export default function Hero() {
     <div className="relative h-screen overflow-hidden">
       {/* Background Image with Parallax */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?q=80&w=2070")',
           transform: `translateY(${scrollY * 0.5}px)`,
         }}
-      />
+      >
+        <Image
+          src="https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?q=80&w=2070&auto=format&fit=crop"
+          alt="Missouri River floating and kayaking"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+          quality={85}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
       
       {/* Wave Animation Overlay */}
       <div className="absolute bottom-0 left-0 right-0 h-32">
@@ -63,11 +76,14 @@ export default function Hero() {
           <div className="bg-white rounded-xl shadow-2xl p-2 max-w-3xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
               <div className="flex items-center px-4 py-3 border-r border-gray-200">
-                <MapPin className="w-5 h-5 text-river-600 mr-2" />
+                <MapPin className="w-5 h-5 text-river-600 mr-2" aria-hidden="true" />
+                <label htmlFor="river-select" className="sr-only">Choose River</label>
                 <select 
+                  id="river-select"
                   className="w-full outline-none text-gray-700"
                   value={selectedRiver}
                   onChange={(e) => setSelectedRiver(e.target.value)}
+                  aria-label="Select a river for your trip"
                 >
                   <option value="">Choose River</option>
                   <option value="current-river">Current River</option>
@@ -80,21 +96,27 @@ export default function Hero() {
               </div>
               
               <div className="flex items-center px-4 py-3 border-r border-gray-200">
-                <Calendar className="w-5 h-5 text-river-600 mr-2" />
+                <Calendar className="w-5 h-5 text-river-600 mr-2" aria-hidden="true" />
+                <label htmlFor="date-select" className="sr-only">Trip Date</label>
                 <input 
+                  id="date-select"
                   type="date" 
                   className="w-full outline-none text-gray-700"
                   value={selectedDate}
                   onChange={(e) => setSelectedDate(e.target.value)}
+                  aria-label="Select your trip date"
                 />
               </div>
               
               <div className="flex items-center px-4 py-3 border-r border-gray-200">
-                <Users className="w-5 h-5 text-river-600 mr-2" />
+                <Users className="w-5 h-5 text-river-600 mr-2" aria-hidden="true" />
+                <label htmlFor="group-select" className="sr-only">Group Size</label>
                 <select 
+                  id="group-select"
                   className="w-full outline-none text-gray-700"
                   value={selectedGroup}
                   onChange={(e) => setSelectedGroup(e.target.value)}
+                  aria-label="Select your group size"
                 >
                   <option value="">Group Size</option>
                   <option value="1-2">1-2 People</option>
@@ -104,7 +126,11 @@ export default function Hero() {
                 </select>
               </div>
               
-              <button onClick={handleFindTrips} className="btn-primary rounded-lg">
+              <button 
+                onClick={handleFindTrips} 
+                className="btn-primary rounded-lg"
+                aria-label="Find float trips based on your criteria"
+              >
                 Find Trips
               </button>
             </div>
