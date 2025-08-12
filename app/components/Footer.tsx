@@ -16,14 +16,26 @@ export default function Footer() {
               for floating, kayaking, and canoeing Missouri&apos;s scenic waterways.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition-colors">
-                <Facebook className="w-5 h-5" />
+              <a 
+                href="#" 
+                className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook className="w-5 h-5" aria-hidden="true" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition-colors">
-                <Instagram className="w-5 h-5" />
+              <a 
+                href="#" 
+                className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-5 h-5" aria-hidden="true" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition-colors">
-                <Youtube className="w-5 h-5" />
+              <a 
+                href="#" 
+                className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Subscribe to our YouTube channel"
+              >
+                <Youtube className="w-5 h-5" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -60,28 +72,34 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center text-gray-400">
-                <MapPin className="w-4 h-4 mr-2" />
+                <MapPin className="w-4 h-4 mr-2" aria-hidden="true" />
                 Missouri Ozarks Region
               </li>
               <li className="flex items-center text-gray-400">
-                <Phone className="w-4 h-4 mr-2" />
-                1-800-FLOAT-MO
+                <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
+                <a href="tel:1-800-356-2866" className="hover:text-white transition-colors">1-800-FLOAT-MO</a>
               </li>
               <li className="flex items-center text-gray-400">
-                <Mail className="w-4 h-4 mr-2" />
-                info@moriverguide.com
+                <Mail className="w-4 h-4 mr-2" aria-hidden="true" />
+                <a href="mailto:info@moriverguide.com" className="hover:text-white transition-colors">info@moriverguide.com</a>
               </li>
             </ul>
             
             <div className="mt-6">
               <h4 className="text-sm font-semibold mb-2">Newsletter</h4>
               <div className="flex gap-2">
+                <label htmlFor="newsletter-email" className="sr-only">Email address for newsletter</label>
                 <input 
+                  id="newsletter-email"
                   type="email" 
                   placeholder="Your email" 
-                  className="flex-1 px-3 py-2 bg-gray-800 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-river-500"
+                  className="flex-1 px-3 py-2 bg-gray-800 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-river-500 min-h-[44px]"
+                  aria-label="Enter your email address to subscribe to our newsletter"
                 />
-                <button className="px-4 py-2 bg-river-600 rounded-lg hover:bg-river-700 transition-colors text-sm font-medium">
+                <button 
+                  className="px-4 py-2 bg-river-600 rounded-lg hover:bg-river-700 transition-colors text-sm font-medium min-h-[44px]"
+                  aria-label="Subscribe to newsletter"
+                >
                   Subscribe
                 </button>
               </div>

@@ -91,7 +91,7 @@ export default function RootLayout({
         {/* Critical CSS for above-the-fold content */}
         <style dangerouslySetInnerHTML={{
           __html: `
-            body{margin:0;background-color:rgb(249 250 251);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+            body{margin:0;background-color:rgb(249 250 251);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;color:rgb(17 24 39)}
             .min-h-screen{min-height:100vh}
             .relative{position:relative}
             .h-screen{height:100vh}

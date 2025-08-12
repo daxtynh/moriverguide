@@ -24,10 +24,11 @@ export default function TripFinder() {
         <div className="bg-gray-50 rounded-xl p-6 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="trip-type" className="block text-sm font-medium text-gray-700 mb-2">
                 Trip Type
               </label>
               <select 
+                id="trip-type"
                 value={tripType}
                 onChange={(e) => setTripType(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-river-500 focus:border-transparent"
@@ -40,10 +41,11 @@ export default function TripFinder() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="difficulty-level" className="block text-sm font-medium text-gray-700 mb-2">
                 Difficulty Level
               </label>
               <select 
+                id="difficulty-level"
                 value={difficulty}
                 onChange={(e) => setDifficulty(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-river-500 focus:border-transparent"
@@ -56,10 +58,10 @@ export default function TripFinder() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="trip-duration" className="block text-sm font-medium text-gray-700 mb-2">
                 Trip Duration
               </label>
-              <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-river-500 focus:border-transparent">
+              <select id="trip-duration" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-river-500 focus:border-transparent">
                 <option>Any Duration</option>
                 <option>2-3 Hours</option>
                 <option>Half Day (4-5 Hours)</option>
@@ -69,10 +71,10 @@ export default function TripFinder() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="distance" className="block text-sm font-medium text-gray-700 mb-2">
                 Distance from You
               </label>
-              <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-river-500 focus:border-transparent">
+              <select id="distance" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-river-500 focus:border-transparent">
                 <option>Any Distance</option>
                 <option>Within 50 miles</option>
                 <option>Within 100 miles</option>
@@ -82,12 +84,18 @@ export default function TripFinder() {
           </div>
 
           <div className="flex justify-between items-center mt-6">
-            <button className="flex items-center text-river-600 hover:text-river-700">
-              <Filter className="w-4 h-4 mr-2" />
+            <button 
+              className="flex items-center text-river-600 hover:text-river-700 min-h-[44px] px-4 py-2"
+              aria-label="Show additional filter options"
+            >
+              <Filter className="w-4 h-4 mr-2" aria-hidden="true" />
               More Filters
             </button>
-            <button className="btn-primary">
-              <Search className="w-4 h-4 mr-2 inline" />
+            <button 
+              className="btn-primary"
+              aria-label="Search for float trips with selected criteria"
+            >
+              <Search className="w-4 h-4 mr-2 inline" aria-hidden="true" />
               Search Trips
             </button>
           </div>

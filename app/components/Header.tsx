@@ -22,8 +22,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <Droplets className="w-8 h-8 text-river-600 mr-2" />
+            <Link href="/" className="flex items-center" aria-label="MoRiverGuide - Home">
+              <Droplets className="w-8 h-8 text-river-600 mr-2" aria-hidden="true" />
               <span className="text-xl font-bold text-gray-900">
                 Mo<span className="text-river-600">RiverGuide</span>
               </span>
@@ -40,7 +40,7 @@ export default function Header() {
                   href={item.href}
                   className="flex items-center text-gray-700 hover:text-river-600 transition-colors font-medium"
                 >
-                  <Icon className="w-4 h-4 mr-1" />
+                  <Icon className="w-4 h-4 mr-1" aria-hidden="true" />
                   {item.name}
                 </Link>
               );
@@ -57,12 +57,15 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-700 hover:text-river-600 focus:outline-none"
+              className="text-gray-700 hover:text-river-600 focus:outline-none p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
+              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {mobileMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-6 h-6" aria-hidden="true" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-6 h-6" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -70,7 +73,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
+          <div id="mobile-menu" className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-3">
               {navigation.map((item) => {
                 const Icon = item.icon;
@@ -81,7 +84,7 @@ export default function Header() {
                     className="flex items-center text-gray-700 hover:text-river-600 transition-colors font-medium py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <Icon className="w-4 h-4 mr-2" />
+                    <Icon className="w-4 h-4 mr-2" aria-hidden="true" />
                     {item.name}
                   </Link>
                 );

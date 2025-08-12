@@ -18,7 +18,7 @@
   }
   
   .btn-secondary {
-    @apply bg-white text-river-700 px-6 py-3 rounded-lg font-semibold border-2 border-river-700 hover:bg-river-50 transition-colors duration-200;
+    @apply bg-white text-river-800 px-6 py-3 rounded-lg font-semibold border-2 border-river-800 hover:bg-river-50 transition-colors duration-200 min-h-[48px] text-base;
   }
   
   .card {
