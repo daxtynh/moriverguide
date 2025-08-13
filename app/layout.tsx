@@ -20,9 +20,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://moriverguide.com',
   },
-  other: {
-    'Cache-Control': 's-maxage=3600, stale-while-revalidate=86400',
-  },
   openGraph: {
     title: "MoRiverGuide - Missouri River Conditions & Trip Planner",
     description: "Real-time river conditions, trip planner, and complete guide for Missouri rivers. Plan your perfect float, kayak, or canoe adventure.",
@@ -88,10 +85,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Resource preloading */}
-        <link rel="preconnect" href="https://moriverguide.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://waterservices.usgs.gov" />
-        <meta httpEquiv="Link" content="<https://moriverguide.com>; rel=preconnect" />
         
         {/* Critical CSS for above-the-fold content */}
         <style dangerouslySetInnerHTML={{
