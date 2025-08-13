@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { 
   MapPin, Clock, Droplets, Calendar, Users, 
-  AlertCircle, Navigation,
+  AlertCircle, Navigation, Copy, Check,
   ChevronDown, ChevronRight, Download, Star
 } from 'lucide-react';
 import WaterLevelBadge from './WaterLevelBadge';
@@ -45,6 +45,26 @@ interface River {
 export default function RiverDetail({ river }: { river: River }) {
   const [activeTab, setActiveTab] = useState('overview');
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const [copiedCoords, setCopiedCoords] = useState<string | null>(null);
+
+  const copyCoordinates = async (lat: number, lng: number, pointName: string) => {
+    const coords = `${lat.toFixed(6)}, ${lng.toFixed(6)}`;
+    try {
+      await navigator.clipboard.writeText(coords);
+      setCopiedCoords(pointName);
+      setTimeout(() => setCopiedCoords(null), 2000);
+    } catch {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = coords;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setCopiedCoords(pointName);
+      setTimeout(() => setCopiedCoords(null), 2000);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -184,6 +204,68 @@ export default function RiverDetail({ river }: { river: River }) {
                 </div>
               </section>
 
+              {/* Access Points SEO Section */}
+              <section className="card">
+                <h2 className="text-2xl font-bold mb-4">{river.name} Access Points & Put-ins</h2>
+                <p className="text-gray-700 mb-6">
+                  Plan your <strong>{river.name.toLowerCase()} float trip</strong> using our complete guide to {river.accessPoints.length} public access points. 
+                  All <strong>{river.name.toLowerCase()} access points</strong> are free to use and include GPS coordinates, 
+                  parking, and detailed amenities information. Popular access points include{' '}
+                  {river.accessPoints.slice(0, 3).map((point, index) => (
+                    <span key={index}>
+                      {point.name}
+                      {index < 2 && index < river.accessPoints.length - 1 ? ', ' : ''}
+                      {index === 2 && river.accessPoints.length > 3 ? ', and more' : ''}
+                      {index === river.accessPoints.length - 1 || (index === 2 && river.accessPoints.length <= 3) ? '.' : ''}
+                    </span>
+                  ))}
+                </p>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {river.accessPoints.slice(0, 3).map((point, index) => (
+                    <div key={index} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                      <h3 className="font-semibold text-gray-900 mb-1">{point.name}</h3>
+                      <p className="text-sm text-gray-600 mb-2">{point.address}</p>
+                      
+                      <div className="flex items-center justify-between text-xs text-gray-600 mb-2">
+                        <span className="flex items-center">
+                          <Navigation className="w-3 h-3 mr-1 text-river-500" />
+                          {point.lat.toFixed(4)}, {point.lng.toFixed(4)}
+                        </span>
+                        <button
+                          onClick={() => copyCoordinates(point.lat, point.lng, `${point.name}-preview`)}
+                          className="flex items-center gap-1 px-1 py-0.5 hover:bg-gray-200 rounded transition-colors"
+                          title="Copy coordinates"
+                        >
+                          {copiedCoords === `${point.name}-preview` ? (
+                            <Check className="w-3 h-3 text-green-600" />
+                          ) : (
+                            <Copy className="w-3 h-3" />
+                          )}
+                        </button>
+                      </div>
+                      
+                      <div className="flex flex-wrap gap-1">
+                        {point.amenities.slice(0, 3).map((amenity, i) => (
+                          <span key={i} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                            {amenity}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-4 text-center">
+                  <button 
+                    onClick={() => setActiveTab('access-points')}
+                    className="text-river-600 hover:text-river-700 font-medium"
+                  >
+                    View All {river.accessPoints.length} {river.name} Access Points →
+                  </button>
+                </div>
+              </section>
+
               {/* Popular Float Sections */}
               <section className="card">
                 <h2 className="text-2xl font-bold mb-4">Popular Float Sections</h2>
@@ -307,16 +389,42 @@ export default function RiverDetail({ river }: { river: River }) {
 
         {activeTab === 'access-points' && (
           <div>
-            <h2 className="text-3xl font-bold mb-6">{river.name} Access Points</h2>
+            <h1 className="text-3xl font-bold mb-4">Complete Guide to {river.name} Access Points</h1>
+            <p className="text-gray-700 mb-6 text-lg">
+              Discover all {river.accessPoints.length} public <strong>{river.name.toLowerCase()} access points</strong> with GPS coordinates, 
+              amenities, and directions. Whether you&apos;re looking for put-ins with full facilities or remote access points, 
+              this complete guide helps you plan the perfect <strong>{river.name.toLowerCase()} float trip</strong>.
+            </p>
+            
+            <h2 className="text-2xl font-semibold mb-4">All {river.name} Public Access Points</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {river.accessPoints.map((point, index) => (
                 <div key={index} className="card">
                   <h3 className="text-xl font-semibold mb-2">{point.name}</h3>
                   <p className="text-sm text-gray-600 mb-4">{point.address}</p>
                   
-                  <div className="flex items-center text-sm text-gray-700 mb-3">
-                    <Navigation className="w-4 h-4 mr-2 text-river-500" />
-                    <span>{point.lat.toFixed(4)}, {point.lng.toFixed(4)}</span>
+                  <div className="flex items-center justify-between text-sm text-gray-700 mb-3">
+                    <div className="flex items-center">
+                      <Navigation className="w-4 h-4 mr-2 text-river-500" />
+                      <span>{point.lat.toFixed(6)}, {point.lng.toFixed(6)}</span>
+                    </div>
+                    <button
+                      onClick={() => copyCoordinates(point.lat, point.lng, point.name)}
+                      className="flex items-center gap-1 px-2 py-1 text-xs bg-gray-100 hover:bg-gray-200 rounded transition-colors"
+                      title="Copy coordinates"
+                    >
+                      {copiedCoords === point.name ? (
+                        <>
+                          <Check className="w-3 h-3 text-green-600" />
+                          <span className="text-green-600">Copied!</span>
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="w-3 h-3" />
+                          <span>Copy</span>
+                        </>
+                      )}
+                    </button>
                   </div>
                   
                   <div className="mb-4">

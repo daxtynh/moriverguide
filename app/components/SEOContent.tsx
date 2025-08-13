@@ -36,6 +36,22 @@ export default function SEOContent() {
           "@type": "Answer",
           "text": "Essential items include: life jackets (required for children under 7), sunscreen, water shoes, dry bag for phones/keys, cooler with ice, trash bags, and plenty of water. Avoid glass containers as they're prohibited on most Missouri rivers."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I find Niangua River access points?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niangua River access points include Bennett Spring State Park (most popular), Moon Valley Access, Tunnel Dam Access, Ha Ha Tonka State Park, and Barclay Public Access. All are free to use with GPS coordinates available on our interactive map."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Do I need a boat ramp or can I use any access point?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most Missouri river access points accommodate canoes and kayaks without formal boat ramps. Concrete ramps are available at major access points like Meramec State Park and Big Spring. Smaller access points typically have gravel bars or gentle bank access suitable for hand-launching."
+        }
       }
     ]
   };
@@ -227,7 +243,145 @@ export default function SEOContent() {
                     during your first trips. Most outfitters offer family-friendly route recommendations.
                   </p>
                 </div>
+                
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">
+                    Where can I find Niangua River access points?
+                  </h4>
+                  <p className="text-gray-700">
+                    <strong>Niangua River access points</strong> include Bennett Spring State Park (most popular), 
+                    Moon Valley Access, Tunnel Dam Access, Ha Ha Tonka State Park, and Barclay Public Access. 
+                    All are free to use with GPS coordinates available on our interactive map.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">
+                    Do I need a boat ramp or can I use any access point?
+                  </h4>
+                  <p className="text-gray-700">
+                    Most Missouri river access points accommodate canoes and kayaks without formal boat ramps. 
+                    Concrete ramps are available at major access points like Meramec State Park and Big Spring. 
+                    Smaller access points typically have gravel bars or gentle bank access suitable for hand-launching.
+                  </p>
+                </div>
               </div>
+            </div>
+
+            {/* Access Points SEO Section */}
+            <div className="mt-12 border-t pt-8">
+              <h3 className="text-2xl font-semibold mb-6">
+                Missouri River Access Points: Complete Guide to Put-ins and Take-outs
+              </h3>
+              
+              <p className="text-gray-700 mb-6">
+                Planning your float trip starts with finding the right <strong>Missouri river access points</strong>. 
+                Our comprehensive database includes 500+ public access points with GPS coordinates, amenities, 
+                and detailed directions for every major river in Missouri. All access points are free to use 
+                and maintained by the Missouri Department of Conservation, state parks, or local authorities.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div>
+                  <h4 className="text-xl font-semibold mb-3">
+                    <Link href="/rivers/current-river" className="text-river-600 hover:text-river-700">
+                      Current River Access Points
+                    </Link>
+                  </h4>
+                  <p className="text-gray-700 mb-3">
+                    The <strong>Current River access points</strong> include 9 major put-ins and take-outs spanning 184 miles. 
+                    Popular access points include Big Spring (with visitor center), Round Spring (cave tours), 
+                    and Akers Ferry (full-service campground). Baptist Camp Access offers the most remote entry point.
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Baptist Camp Access - Remote upper river</li>
+                    <li>• Akers Ferry - Full amenities, camping</li>
+                    <li>• Round Spring - Cave tours, visitor center</li>
+                    <li>• Big Spring - 286 million gallons/day spring</li>
+                    <li>• Van Buren Landing - Easy highway access</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-semibold mb-3">
+                    <Link href="/rivers/meramec-river" className="text-river-600 hover:text-river-700">
+                      Meramec River Access Points
+                    </Link>
+                  </h4>
+                  <p className="text-gray-700 mb-3">
+                    <strong>Meramec River access points</strong> provide easy access within 1 hour of St. Louis. 
+                    Key access points include Meramec State Park (cave tours), Campbell Bridge Access, 
+                    and Sappington Bridge Access. All feature concrete boat ramps and ample parking.
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Meramec State Park - Camping, cave tours</li>
+                    <li>• Campbell Bridge - Concrete ramp, parking</li>
+                    <li>• Sappington Bridge - Easy highway access</li>
+                    <li>• Sullivan area - Multiple outfitter access</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-semibold mb-3">
+                    <Link href="/rivers/niangua-river" className="text-river-600 hover:text-river-700">
+                      Niangua River Access Points
+                    </Link>
+                  </h4>
+                  <p className="text-gray-700 mb-3">
+                    <strong>Niangua River access points</strong> span 60 miles from Bennett Spring to the Lake of the Ozarks. 
+                    Bennett Spring State Park offers the most popular access with trout fishing, while Ha Ha Tonka State Park 
+                    provides access to the lower river near the lake.
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Bennett Spring State Park - Trout fishing, facilities</li>
+                    <li>• Moon Valley Access - Primitive camping</li>
+                    <li>• Tunnel Dam Access - Historic dam site</li>
+                    <li>• Ha Ha Tonka State Park - Lake access, trails</li>
+                    <li>• Barclay Public Access - Highway 64 access</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-semibold mb-3">
+                    <Link href="/rivers/elk-river" className="text-river-600 hover:text-river-700">
+                      Elk River Access Points
+                    </Link>
+                  </h4>
+                  <p className="text-gray-700 mb-3">
+                    <strong>Elk River access points</strong> in Southwest Missouri offer family-friendly floating access. 
+                    Pineville Access and Noel Bridge Access are the most popular, with Mt Shira Access providing 
+                    MDC-managed facilities and Cowskin Access offering remote entry.
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Pineville Access - Popular put-in near town</li>
+                    <li>• Mt Shira Access - MDC managed, full facilities</li>
+                    <li>• Noel Bridge Access - Highway 59 bridge</li>
+                    <li>• Cowskin Access - Remote, near Tiff City</li>
+                    <li>• Ginger Blue Access - Outfitter access</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h4 className="text-xl font-semibold mb-4">
+                Using Missouri River Access Points: What You Need to Know
+              </h4>
+              
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+                <li><strong>All access points are free</strong> - No fees for launching at public access points</li>
+                <li><strong>GPS coordinates provided</strong> - Use our <Link href="/map" className="text-river-600 hover:text-river-700">interactive map</Link> for exact locations</li>
+                <li><strong>Parking available</strong> - Most access points have designated parking areas</li>
+                <li><strong>No overnight parking</strong> - Arrange shuttle service or pickup transportation</li>
+                <li><strong>Restroom facilities</strong> - Major access points include restrooms and picnic areas</li>
+                <li><strong>Boat ramps vary</strong> - Some have concrete ramps, others are gravel or dirt access</li>
+                <li><strong>Seasonal conditions</strong> - Spring flooding may temporarily close some access points</li>
+              </ul>
+
+              <p className="text-gray-700">
+                For complete details on all <strong>Missouri river access points</strong> including GPS coordinates, 
+                amenities, and current conditions, use our <Link href="/map" className="text-river-600 hover:text-river-700">interactive map</Link> or 
+                browse individual river pages. All access point information is regularly updated based on MDC and 
+                state park data to ensure accuracy for your float trip planning.
+              </p>
             </div>
 
             {/* Location-Based SEO */}

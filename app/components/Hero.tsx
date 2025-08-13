@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { ChevronDown, MapPin, Calendar, Users } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);

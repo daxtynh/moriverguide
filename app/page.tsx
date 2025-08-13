@@ -1,5 +1,6 @@
 import Hero from './components/Hero';
 import TripFinder from './components/TripFinder';
+import QuickStats from './components/QuickStats';
 import RiverCards from './components/RiverCards';
 import DIYPlanner from './components/DIYPlanner';
 import Features from './components/Features';
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <TripFinder />
+      <QuickStats />
       <RiverCards />
       <DIYPlanner />
       <Features />

@@ -12,7 +12,8 @@
       "Bash(npm uninstall:*)",
       "Bash(npm install:*)",
       "Bash(mkdir:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebSearch"
     ],
     "deny": []
   }

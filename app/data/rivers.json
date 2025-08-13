@@ -65,10 +65,10 @@
       "accessPoints": [
         {
           "name": "Baptist Camp Access",
-          "lat": 37.4467,
-          "lng": -91.7428,
+          "lat": 37.435497,
+          "lng": -91.657657,
           "amenities": ["Parking", "Restrooms", "Picnic Area"],
-          "address": "Off Highway E, north of Salem, MO",
+          "address": "Baptist Camp Access, Hwy H, near Cedar Grove, MO",
           "notes": "Water levels must be adequate for floating"
         },
         {
@@ -80,10 +80,10 @@
         },
         {
           "name": "Akers Ferry",
-          "lat": 37.3728,
-          "lng": -91.5681,
+          "lat": 37.38306,
+          "lng": -91.56944,
           "amenities": ["Parking", "Restrooms", "Camping", "Store"],
-          "address": "Akers Ferry Rd, off Highway K, Salem, MO 65560"
+          "address": "Akers Ferry / Akers Group Campground, MO-19 at Current River"
         },
         {
           "name": "Pulltite Spring",
@@ -94,10 +94,10 @@
         },
         {
           "name": "Round Spring",
-          "lat": 37.2850,
-          "lng": -91.4131,
+          "lat": 37.283056,
+          "lng": -91.408333,
           "amenities": ["Parking", "Restrooms", "Camping", "Cave Tours", "Visitor Center"],
-          "address": "Highway 19, 13 miles north of Eminence, MO"
+          "address": "Round Spring Access, MO-19, Eminence, MO"
         },
         {
           "name": "Two Rivers Junction",
@@ -117,10 +117,10 @@
         },
         {
           "name": "Big Spring",
-          "lat": 36.9556,
-          "lng": -91.1078,
+          "lat": 36.9269968,
+          "lng": -90.9890157,
           "amenities": ["Parking", "Restrooms", "Picnic Area", "Visitor Center", "Lodging"],
-          "address": "County Road 60-203, 4 miles south of Van Buren, MO 63965"
+          "address": "Big Spring Unit (end of MO-103), Van Buren, MO 63965"
         },
         {
           "name": "Van Buren Landing",
@@ -185,15 +185,15 @@
       "accessPoints": [
         {
           "name": "Buck Hollow Access",
-          "lat": 37.2456,
-          "lng": -91.5678,
+          "lat": 37.056953935979664,
+          "lng": -91.66457603091453,
           "amenities": ["Parking", "Primitive Camping"],
           "address": "Highway 17, Texas County, MO"
         },
         {
           "name": "Rymers Access",
-          "lat": 37.1978,
-          "lng": -91.5234,
+          "lat": 37.0606849358964,
+          "lng": -91.55932283272118,
           "amenities": ["Parking"],
           "address": "Off Highway V, Shannon County, MO"
         },
@@ -203,6 +203,13 @@
           "lng": -91.4468,
           "amenities": ["Parking", "Restrooms", "Picnic Area", "Historic Mill", "Store"],
           "address": "Highway 106, 6 miles west of Eminence, MO"
+        },
+        {
+          "name": "Buttin Rock Access",
+          "lat": 37.1545341652422,
+          "lng": -91.35941546509325,
+          "amenities": ["Parking"],
+          "address": "Jacks Fork River, Shannon County, MO"
         },
         {
           "name": "Eminence Access",
@@ -240,11 +247,11 @@
       ],
       "popularSections": [
         {
-          "name": "Maramec Spring to Meramec State Park",
+          "name": "Campbell Bridge to Meramec State Park",
           "distance": "7 miles",
           "time": "3-4 hours",
           "difficulty": "Beginner",
-          "putIn": "Maramec Spring Park",
+          "putIn": "Campbell Bridge Access",
           "takeOut": "Meramec State Park"
         },
         {
@@ -266,13 +273,6 @@
       ],
       "accessPoints": [
         {
-          "name": "Maramec Spring Park",
-          "lat": 38.0744,
-          "lng": -91.1173,
-          "amenities": ["Parking", "Restrooms", "Store", "Trout Fishing", "Museum"],
-          "address": "21880 Maramec Spring Dr, St. James, MO 65559"
-        },
-        {
           "name": "Meramec State Park",
           "lat": 38.2028,
           "lng": -91.0948,
@@ -281,15 +281,15 @@
         },
         {
           "name": "Campbell Bridge Access",
-          "lat": 38.1567,
-          "lng": -91.1234,
+          "lat": 38.08264921461013,
+          "lng": -91.15077917210347,
           "amenities": ["Parking", "Boat Ramp"],
           "address": "Campbell Bridge Rd, Crawford County, MO"
         },
         {
           "name": "Sappington Bridge Access",
-          "lat": 38.2234,
-          "lng": -91.0567,
+          "lat": 38.15761387849472,
+          "lng": -91.10928814593774,
           "amenities": ["Parking", "Boat Ramp"],
           "address": "Sappington Bridge Rd, Franklin County, MO"
         }
@@ -363,10 +363,26 @@
         },
         {
           "name": "Moon Valley Access",
-          "lat": 37.7456,
-          "lng": -92.8901,
+          "lat": 37.519799,
+          "lng": -92.983844,
           "amenities": ["Parking", "Primitive Camping"],
-          "address": "Moon Valley Rd, Laclede County, MO"
+          "address": "MDC Moon Valley Access, Windyville, MO"
+        },
+        {
+          "name": "Tunnel Dam Access",
+          "lat": 37.9364,
+          "lng": -92.8510,
+          "amenities": ["Parking", "Boat Ramp", "Picnic Area"],
+          "address": "Tunnel Dam Road, near Macks Creek, Camden County, MO",
+          "notes": "360-acre hydroelectric lake, historic tunnel dam site"
+        },
+        {
+          "name": "Ha Ha Tonka State Park",
+          "lat": 37.9595,
+          "lng": -92.7683,
+          "amenities": ["Parking", "Boat Docks", "Kayak Launch", "Restrooms", "Picnic Areas", "Trails"],
+          "address": "Ha Ha Tonka State Park, Camdenton, Camden County, MO",
+          "notes": "Where Niangua River merges into Lake of the Ozarks, 12th largest spring in Missouri"
         }
       ],
       "waterLevel": {
@@ -438,8 +454,8 @@
         },
         {
           "name": "Riverton Access",
-          "lat": 36.7234,
-          "lng": -91.2345,
+          "lat": 36.64869386258952,
+          "lng": -91.2017052751217,
           "amenities": ["Parking", "Boat Ramp"],
           "address": "Highway 160, Oregon County, MO"
         }
@@ -491,8 +507,8 @@
       "accessPoints": [
         {
           "name": "Hazelgreen Access",
-          "lat": 37.7234,
-          "lng": -92.0456,
+          "lat": 37.759387,
+          "lng": -92.452832,
           "amenities": ["Parking", "Camping"],
           "address": "Highway 7, Laclede County, MO"
         },
@@ -551,8 +567,8 @@
       "accessPoints": [
         {
           "name": "Dog Bluff Access",
-          "lat": 37.5678,
-          "lng": -92.1234,
+          "lat": 37.327009,
+          "lng": -92.002008,
           "amenities": ["Parking", "Primitive Camping"],
           "address": "Forest Road, Texas County, MO"
         },
@@ -611,15 +627,15 @@
       "accessPoints": [
         {
           "name": "Lesterville Access",
-          "lat": 37.4567,
-          "lng": -90.8234,
+          "lat": 37.417226201035874,
+          "lng": -90.82568833434802,
           "amenities": ["Parking", "Camping"],
           "address": "Highway 21, Reynolds County, MO"
         },
         {
           "name": "Sutton Bluff",
-          "lat": 37.3456,
-          "lng": -90.7123,
+          "lat": 37.475744,
+          "lng": -91.006698,
           "amenities": ["Parking", "Boat Ramp"],
           "address": "County Road, Reynolds County, MO"
         }
@@ -663,8 +679,8 @@
       "accessPoints": [
         {
           "name": "Scotia Access",
-          "lat": 37.8456,
-          "lng": -91.0234,
+          "lat": 38.02922280456787,
+          "lng": -91.21311496702602,
           "amenities": ["Parking"],
           "address": "Highway E, Crawford County, MO"
         }
@@ -805,15 +821,15 @@
       "accessPoints": [
         {
           "name": "Hootentown Access",
-          "lat": 37.0234,
-          "lng": -93.1456,
+          "lat": 36.939706,
+          "lng": -93.386427,
           "amenities": ["Parking", "Boat Ramp"],
           "address": "Highway 14, Christian County, MO"
         },
         {
           "name": "Kinser Bridge",
-          "lat": 36.9876,
-          "lng": -93.0789,
+          "lat": 37.150024,
+          "lng": -93.203581,
           "amenities": ["Parking"],
           "address": "Kinser Bridge Rd, Stone County, MO"
         }
@@ -846,20 +862,20 @@
       ],
       "popularSections": [
         {
-          "name": "Pineville to Mt Shira/Cowskin",
+          "name": "Pineville to Mt Shira",
           "distance": "6 miles",
           "time": "2.5-3.5 hours",
           "difficulty": "Beginner",
           "putIn": "Pineville Access",
-          "takeOut": "Mt Shira / Cowskin Access",
+          "takeOut": "Mt Shira Access",
           "notes": "Popular family float, near Shady Beaches Floats"
         },
         {
-          "name": "Mt Shira/Cowskin to Noel",
+          "name": "Mt Shira to Noel",
           "distance": "7 miles",
           "time": "3-4 hours",
           "difficulty": "Beginner",
-          "putIn": "Mt Shira / Cowskin Access",
+          "putIn": "Mt Shira Access",
           "takeOut": "Noel Bridge Access"
         },
         {
@@ -882,14 +898,14 @@
       "accessPoints": [
         {
           "name": "Pineville Access",
-          "lat": 36.5945,
-          "lng": -94.3841,
+          "lat": 36.58903276920575,
+          "lng": -94.38687882386148,
           "amenities": ["Parking", "Boat Ramp", "Restrooms"],
-          "address": "Highway 90 Bridge, Pineville, MO 64856",
+          "address": "Old Hwy 71 Bridge / Kozy Kamp area, 71 Elk River Rd, Pineville, MO 64856",
           "notes": "Popular put-in spot near town"
         },
         {
-          "name": "Mt Shira / Cowskin Access",
+          "name": "Mt Shira Access",
           "lat": 36.5772,
           "lng": -94.4647,
           "amenities": ["Parking", "Boat Ramp", "Restrooms", "Picnic Area", "Primitive Camping"],
@@ -897,41 +913,40 @@
           "notes": "MDC managed access with concrete boat ramp and 26-acre area, located next to Shady Beaches Floats outfitter"
         },
         {
-          "name": "Noel Bridge Access",
-          "lat": 36.5458,
-          "lng": -94.4850,
+          "name": "Cowskin Access",
+          "lat": 36.631415,
+          "lng": -94.587935,
           "amenities": ["Parking", "Boat Ramp"],
-          "address": "Highway 59 Bridge at Noel, MO 64854"
+          "address": "Near Tiff City, MO"
+        },
+        {
+          "name": "Noel Bridge Access",
+          "lat": 36.549267,
+          "lng": -94.493453,
+          "amenities": ["Parking", "Boat Ramp"],
+          "address": "MO-59 Bridge over Elk River, Noel, MO 64854"
         },
         {
           "name": "Elk River Wayside Park",
-          "lat": 36.5350,
-          "lng": -94.4950,
+          "lat": 36.55310041,
+          "lng": -94.47350028,
           "amenities": ["Parking", "Picnic Area", "Restrooms"],
-          "address": "Highway 59 South of Noel, MO",
+          "address": "Elk River Floats & Wayside Campground, 201 Minnow Springs Ave, Noel, MO 64854",
           "notes": "Nice picnic area and river access"
         },
         {
           "name": "Ginger Blue Access",
-          "lat": 36.5150,
-          "lng": -94.5400,
+          "lat": 36.58537,
+          "lng": -94.454708,
           "amenities": ["Parking", "Boat Ramp"],
-          "address": "Ginger Blue Rd, near Lanagan, MO"
+          "address": "Elk River Floats & Trestle Park, 435 Elk Springs Rd, Noel (Ginger Blue), MO 64854"
         },
         {
           "name": "Tiff City Bridge",
-          "lat": 36.6303,
-          "lng": -94.5878,
+          "lat": 36.63139,
+          "lng": -94.58694,
           "amenities": ["Parking", "Boat Ramp"],
-          "address": "Highway 43 Bridge, Tiff City, MO 64868"
-        },
-        {
-          "name": "Southwest City Access",
-          "lat": 36.5100,
-          "lng": -94.6100,
-          "amenities": ["Parking"],
-          "address": "Highway 43, Southwest City, MO 64863",
-          "notes": "Take-out only, near Arkansas border"
+          "address": "USGS Elk River Gage at Tiff City Bridge, Tiff City, MO 64868"
         }
       ],
       "waterLevel": {

@@ -6,18 +6,30 @@ import riversData from '../data/rivers.json';
 import WaterLevelBadge from './WaterLevelBadge';
 
 export default function RiverCards() {
-  const rivers = riversData.rivers;
+  // Show only top 6 most popular rivers
+  const featuredRivers = [
+    'current-river',
+    'meramec-river', 
+    'jacks-fork-river',
+    'elk-river',
+    'niangua-river',
+    'eleven-point-river'
+  ];
+  
+  const rivers = riversData.rivers.filter(river => 
+    featuredRivers.includes(river.id)
+  );
 
   return (
     <section className="py-16 bg-gray-50">
       <div className="section-padding">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Popular Missouri Float Rivers
+            Most Popular Float Rivers
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Explore Missouri&apos;s best rivers for floating, from crystal-clear spring-fed waters 
-            to scenic Ozark streams perfect for every skill level.
+            Discover Missouri&apos;s top 6 rivers for floating. From beginner-friendly family trips 
+            to scenic wilderness adventures - find your perfect river experience.
           </p>
         </div>
 
@@ -95,11 +107,28 @@ export default function RiverCards() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Link href="/rivers" className="btn-primary inline-block">
-            View All Rivers
-            <ChevronRight className="w-5 h-5 inline ml-2" />
-          </Link>
+        {/* Call-to-Action Section */}
+        <div className="text-center mt-16">
+          <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Ready to Plan Your Float Trip?
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Explore all 13+ Missouri rivers, compare conditions, and find the perfect outfitter for your adventure.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/rivers" className="btn-primary">
+                View All Rivers
+                <ChevronRight className="w-5 h-5 inline ml-2" />
+              </Link>
+              <Link href="/outfitters" className="btn-secondary">
+                Find Outfitters
+              </Link>
+              <Link href="/map" className="btn-outline">
+                Interactive Map
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
