@@ -85,20 +85,23 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Resource preloading */}
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preload" as="image" href="https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?auto=format&fit=crop&w=1200&q=75" fetchPriority="high" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://waterservices.usgs.gov" />
         
         {/* Critical CSS for above-the-fold content */}
         <style dangerouslySetInnerHTML={{
           __html: `
-            body{margin:0;background-color:rgb(249 250 251);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;color:rgb(17 24 39)}
+            body{margin:0;background-color:rgb(249 250 251);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;color:rgb(17 24 39);font-family:Inter,system-ui,sans-serif}
             .min-h-screen{min-height:100vh}
             .relative{position:relative}
             .h-screen{height:100vh}
             .overflow-hidden{overflow:hidden}
             .absolute{position:absolute}
             .inset-0{inset:0}
-            .object-cover{object-fit:cover}
+            .bg-cover{background-size:cover}
+            .bg-center{background-position:center}
             .z-10{z-index:10}
             .flex{display:flex}
             .items-center{align-items:center}
@@ -110,7 +113,15 @@ export default function RootLayout({
             .shadow-2xl{box-shadow:0 25px 50px -12px rgba(0,0,0,0.25)}
             .p-4{padding:1rem}
             .max-w-3xl{max-width:48rem}
+            .max-w-4xl{max-width:56rem}
             .mx-auto{margin-left:auto;margin-right:auto}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .font-bold{font-weight:700}
+            .drop-shadow-2xl{filter:drop-shadow(0 25px 25px rgba(0,0,0,0.15))}
+            .drop-shadow-lg{filter:drop-shadow(0 10px 8px rgba(0,0,0,0.04)) drop-shadow(0 4px 3px rgba(0,0,0,0.1))}
             .grid{display:grid}
             .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
             .gap-4{gap:1rem}
@@ -119,6 +130,8 @@ export default function RootLayout({
             .text-base{font-size:1rem;line-height:1.5rem}
             .w-full{width:100%}
             @media(min-width:768px){
+              .md\\:text-7xl{font-size:4.5rem;line-height:1}
+              .md\\:text-2xl{font-size:1.5rem;line-height:2rem}
               .md\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
               .md\\:gap-2{gap:0.5rem}
               .md\\:py-3{padding-top:0.75rem;padding-bottom:0.75rem}
@@ -131,13 +144,12 @@ export default function RootLayout({
           `
         }} />
         
-        {/* Google Analytics */}
+        {/* Google Analytics - deferred for better performance */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-03ZXQNWT7J"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

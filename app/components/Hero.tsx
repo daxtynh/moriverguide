@@ -52,25 +52,13 @@ export default function Hero() {
     <div className="relative h-screen overflow-hidden">
       {/* Background Image with Parallax */}
       <div 
-        className="absolute inset-0"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           transform: isMobile ? 'none' : `translate3d(0, ${scrollY * 0.5}px, 0)`,
-          willChange: isMobile ? 'auto' : 'transform'
+          willChange: isMobile ? 'auto' : 'transform',
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?auto=format&fit=crop&w=${isMobile ? '800' : '1200'}&q=${isMobile ? '60' : '75'}")`
         }}
-      >
-        <Image
-          src="https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?auto=format&fit=crop&w=1200&q=75"
-          alt="Missouri River floating and kayaking"
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-          className="object-cover"
-          quality={75}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-        />
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+      />
       
       {/* Wave Animation Overlay */}
       <div className="absolute bottom-0 left-0 right-0 h-32">
