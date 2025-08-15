@@ -314,6 +314,145 @@ export const USGS_SITES: Record<string, RiverSites> = {
         optimalRange: [2.5, 5.0]
       }
     ]
+  },
+  'osage-river': {
+    name: 'Osage River',
+    sites: [
+      {
+        id: '06918250',
+        name: 'Osage River at Taberville',
+        location: 'Taberville, MO',
+        lat: 37.7739,
+        lng: -93.8818,
+        floodStage: 20.0,
+        actionStage: 14.0,
+        minorFloodStage: 17.0,
+        optimalRange: [4.0, 9.0]
+      },
+      {
+        id: '06926000',
+        name: 'Osage River near Bagnell',
+        location: 'Bagnell, MO',
+        lat: 38.2111,
+        lng: -92.5946,
+        floodStage: 22.0,
+        actionStage: 15.0,
+        minorFloodStage: 18.0,
+        optimalRange: [5.0, 12.0]
+      },
+      {
+        id: '06926510',
+        name: 'Osage River below St. Thomas',
+        location: 'St. Thomas, MO',
+        lat: 38.2567,
+        lng: -92.4234,
+        optimalRange: [3.0, 8.0]
+      }
+    ]
+  },
+  'spring-river': {
+    name: 'Spring River',
+    sites: [
+      {
+        id: '07185250',
+        name: 'Spring River below Verona',
+        location: 'Verona, MO',
+        lat: 36.9734,
+        lng: -93.7329,
+        floodStage: 16.0,
+        actionStage: 10.0,
+        minorFloodStage: 13.0,
+        optimalRange: [3.0, 7.0]
+      },
+      {
+        id: '07185700',
+        name: 'Spring River at La Russell',
+        location: 'La Russell, MO',
+        lat: 37.0456,
+        lng: -93.8129,
+        optimalRange: [2.5, 6.0]
+      }
+    ]
+  },
+  'buffalo-creek': {
+    name: 'Buffalo Creek',
+    sites: [
+      {
+        id: '07189100',
+        name: 'Buffalo Creek at Tiff City',
+        location: 'Tiff City, MO',
+        lat: 36.6361,
+        lng: -94.5908,
+        floodStage: 12.0,
+        actionStage: 8.0,
+        minorFloodStage: 10.0,
+        optimalRange: [2.0, 5.0]
+      }
+    ]
+  },
+  'big-river': {
+    name: 'Big River',
+    sites: [
+      {
+        id: '07019500',
+        name: 'Big River at Byrnesville',
+        location: 'Byrnesville, MO',
+        lat: 37.9234,
+        lng: -90.6123,
+        floodStage: 18.0,
+        actionStage: 12.0,
+        minorFloodStage: 15.0,
+        optimalRange: [2.5, 6.0]
+      }
+    ]
+  },
+  'bourbeuse-river': {
+    name: 'Bourbeuse River',
+    sites: [
+      {
+        id: '07014500',
+        name: 'Bourbeuse River near Union',
+        location: 'Union, MO',
+        lat: 38.4467,
+        lng: -91.0045,
+        floodStage: 15.0,
+        actionStage: 10.0,
+        minorFloodStage: 12.0,
+        optimalRange: [2.0, 5.0]
+      }
+    ]
+  },
+  'st-francis-river': {
+    name: 'St. Francis River',
+    sites: [
+      {
+        id: '07067500',
+        name: 'St. Francis River near Roselle',
+        location: 'Roselle, MO',
+        lat: 37.0856,
+        lng: -90.0734,
+        floodStage: 16.0,
+        actionStage: 11.0,
+        minorFloodStage: 13.0,
+        optimalRange: [3.0, 7.0]
+      }
+    ]
+  },
+  'white-river': {
+    name: 'White River',
+    sites: [
+      {
+        id: '07052152',
+        name: 'White River at Forsyth',
+        location: 'Forsyth, MO',
+        lat: 36.6856,
+        lng: -93.1234,
+        floodStage: 14.0,
+        actionStage: 9.0,
+        minorFloodStage: 11.0,
+        optimalRange: [2.5, 6.0]
+      }
+    ]
   }
 };
 
@@ -426,7 +565,14 @@ export function getWaterStatus(gageHeight: number, riverId: string, siteId?: str
     'huzzah-creek': { low: 1, optimal: [1.5, 3], high: 4, flood: 6 },
     'courtois-creek': { low: 1, optimal: [1.5, 3], high: 4, flood: 6 },
     'north-fork-river': { low: 2.5, optimal: [3, 5], high: 7, flood: 10 },
-    'james-river': { low: 2, optimal: [2.5, 5], high: 7, flood: 12 }
+    'james-river': { low: 2, optimal: [2.5, 5], high: 7, flood: 12 },
+    'osage-river': { low: 3.5, optimal: [4, 9], high: 14, flood: 20 },
+    'spring-river': { low: 2.5, optimal: [3, 7], high: 10, flood: 16 },
+    'buffalo-creek': { low: 1.5, optimal: [2, 5], high: 8, flood: 12 },
+    'big-river': { low: 2, optimal: [2.5, 6], high: 12, flood: 18 },
+    'bourbeuse-river': { low: 1.5, optimal: [2, 5], high: 10, flood: 15 },
+    'st-francis-river': { low: 2.5, optimal: [3, 7], high: 11, flood: 16 },
+    'white-river': { low: 2, optimal: [2.5, 6], high: 9, flood: 14 }
   };
 
   const range = generalRanges[riverId] || { low: 2, optimal: [3, 6], high: 9, flood: 15 };
@@ -483,7 +629,21 @@ export function validateFlowRate(cfs: number, riverId: string): {
     'niangua-river': { low: 100, normal: [200, 1000], high: 2000 },
     'jacks-fork-river': { low: 50, normal: [100, 500], high: 1000 },  // Smaller river
     'eleven-point-river': { low: 200, normal: [300, 1500], high: 3000 },
-    'elk-river': { low: 100, normal: [200, 1200], high: 2500 }
+    'elk-river': { low: 100, normal: [200, 1200], high: 2500 },
+    'gasconade-river': { low: 300, normal: [500, 2500], high: 4500 },
+    'big-piney-river': { low: 80, normal: [150, 800], high: 1500 },
+    'black-river': { low: 150, normal: [300, 1200], high: 2500 },
+    'huzzah-creek': { low: 20, normal: [40, 200], high: 400 },
+    'courtois-creek': { low: 15, normal: [30, 150], high: 300 },
+    'north-fork-river': { low: 200, normal: [300, 1000], high: 2000 },
+    'james-river': { low: 150, normal: [250, 1000], high: 2000 },
+    'osage-river': { low: 800, normal: [1200, 5000], high: 8000 },  // Large river
+    'spring-river': { low: 200, normal: [350, 1500], high: 3000 },
+    'buffalo-creek': { low: 40, normal: [80, 400], high: 800 },
+    'big-river': { low: 100, normal: [200, 1000], high: 2000 },
+    'bourbeuse-river': { low: 80, normal: [150, 800], high: 1500 },
+    'st-francis-river': { low: 200, normal: [400, 1800], high: 3500 },
+    'white-river': { low: 300, normal: [500, 2000], high: 4000 }
   };
 
   const range = flowRanges[riverId] || { low: 100, normal: [200, 1500], high: 3000 };

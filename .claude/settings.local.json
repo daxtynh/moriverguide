@@ -15,6 +15,7 @@
       "Bash(grep:*)",
       "WebSearch"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "acceptEdits"
   }
 }
