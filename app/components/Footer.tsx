@@ -49,6 +49,7 @@ export default function Footer() {
               <li><Link href="/water-levels/niangua-river" className="text-gray-400 hover:text-white transition-colors">Niangua River</Link></li>
               <li><Link href="/water-levels/jacks-fork-river" className="text-gray-400 hover:text-white transition-colors">Jacks Fork</Link></li>
               <li><Link href="/water-levels/elk-river" className="text-gray-400 hover:text-white transition-colors">Elk River</Link></li>
+              <li><Link href="/water-levels/missouri-river" className="text-gray-400 hover:text-white transition-colors">Missouri River</Link></li>
               <li><Link href="/rivers" className="text-gray-400 hover:text-white transition-colors">View All Rivers →</Link></li>
             </ul>
           </div>

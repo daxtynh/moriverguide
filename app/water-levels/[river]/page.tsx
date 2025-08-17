@@ -6,13 +6,13 @@ import WaterLevelSchema from '../../components/WaterLevelSchema';
 const riverData: Record<string, { name: string; description: string; keywords: string[] }> = {
   'current-river': {
     name: 'Current River',
-    description: 'Real-time water levels and float conditions for Current River, Missouri\'s most popular float stream with crystal-clear spring-fed water',
-    keywords: ['current river water levels', 'current river missouri', 'current river float conditions', 'current river CFS', 'van buren water levels']
+    description: 'Real-time water levels and paddling conditions for Current River, Missouri\'s most popular kayaking, canoeing, and floating destination with crystal-clear spring-fed water',
+    keywords: ['current river water levels', 'current river kayaking conditions', 'current river canoeing', 'current river missouri', 'current river float conditions', 'current river paddling', 'current river CFS', 'van buren water levels']
   },
   'meramec-river': {
     name: 'Meramec River',
-    description: 'Live water levels and conditions for Meramec River near St. Louis with multiple USGS monitoring stations',
-    keywords: ['meramec river water levels', 'meramec river missouri', 'eureka water levels', 'meramec river CFS', 'sullivan water levels']
+    description: 'Live water levels and paddling conditions for Meramec River near St. Louis, perfect for kayaking, canoeing, and floating with multiple USGS monitoring stations',
+    keywords: ['meramec river water levels', 'meramec river kayaking conditions', 'meramec river canoeing', 'meramec river missouri', 'meramec river paddling', 'eureka water levels', 'meramec river CFS', 'sullivan water levels']
   },
   'jacks-fork-river': {
     name: 'Jacks Fork River',
@@ -103,6 +103,11 @@ const riverData: Record<string, { name: string; description: string; keywords: s
     name: 'White River',
     description: 'Live water levels for White River at Forsyth, below Table Rock Dam in the Missouri Ozarks',
     keywords: ['white river water levels', 'white river missouri', 'forsyth water levels', 'table rock dam', 'white river CFS']
+  },
+  'missouri-river': {
+    name: 'Missouri River',
+    description: 'Real-time water levels and paddling conditions for Missouri River at multiple monitoring stations from Kansas City to St. Louis, ideal for experienced kayaking and canoeing',
+    keywords: ['missouri river water levels', 'missouri river kayaking conditions', 'missouri river canoeing', 'missouri river paddling', 'missouri river missouri', 'kansas city water levels', 'st charles water levels', 'jefferson city water levels', 'hermann water levels', 'missouri river CFS']
   }
 };
 

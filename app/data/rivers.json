@@ -4,8 +4,8 @@
       "id": "current-river",
       "name": "Current River",
       "slug": "current-river",
-      "description": "Missouri's most popular float trip destination with crystal-clear spring-fed waters",
-      "longDescription": "The Current River is Missouri's crown jewel for float trips, offering 184 miles of pristine, spring-fed waters perfect for beginners and families. Known for its crystal-clear water maintained at 58-60°F year-round by six major springs, scenic limestone bluffs, and numerous caves. Big Spring in Van Buren delivers 286 million gallons daily, making it one of the world's largest springs.",
+      "description": "Missouri's most popular paddling destination with crystal-clear spring-fed waters perfect for kayaking, canoeing, and floating",
+      "longDescription": "The Current River is Missouri's crown jewel for paddling adventures, offering 184 miles of pristine, spring-fed waters perfect for kayaking, canoeing, and floating. Ideal for beginners and families, this scenic waterway features crystal-clear water maintained at 58-60°F year-round by six major springs, limestone bluffs, and numerous caves. Big Spring in Van Buren delivers 286 million gallons daily, making it one of the world's largest springs. Excellent for recreational kayaking, family canoeing, and multi-day paddle camping trips.",
       "difficulty": "Beginner to Intermediate",
       "bestMonths": ["May", "June", "July", "August", "September"],
       "length": "184 miles total",
@@ -840,6 +840,120 @@
         "status": "optimal"
       },
       "crowdLevel": "Moderate"
+    },
+    {
+      "id": "missouri-river",
+      "name": "Missouri River",
+      "slug": "missouri-river",
+      "description": "The Big Muddy - America's longest river with diverse paddling, kayaking, and boating opportunities",
+      "longDescription": "The Missouri River, nicknamed 'Big Muddy,' is America's longest river at 2,341 miles. In Missouri, it offers unique paddling and kayaking opportunities through the Missouri River State Trail corridor, historic river towns, and diverse wildlife viewing. Perfect for experienced kayakers and canoeists, this powerful river provides challenging currents, excellent fishing for catfish, bass, and paddlefish, plus access to numerous conservation areas and boat ramps. Ideal for touring kayaks, tandem canoes, and adventure paddling.",
+      "difficulty": "Intermediate to Advanced",
+      "bestMonths": ["May", "June", "July", "August", "September", "October"],
+      "length": "500+ miles in Missouri",
+      "averageDepth": "6-20 feet",
+      "waterTemp": "55-80°F seasonal",
+      "features": [
+        "America's longest river",
+        "Missouri River State Trail access",
+        "Historic river towns - St. Charles, Hermann, Jefferson City",
+        "Excellent catfish and paddlefish fishing",
+        "Multiple conservation areas",
+        "Barge traffic and commercial navigation",
+        "Lewis & Clark National Historic Trail"
+      ],
+      "popularSections": [
+        {
+          "name": "St. Charles to Washington",
+          "distance": "25 miles",
+          "time": "6-8 hours",
+          "difficulty": "Intermediate",
+          "putIn": "St. Charles Access",
+          "takeOut": "Washington Riverfront Park",
+          "notes": "Historic corridor with wineries and river towns"
+        },
+        {
+          "name": "Jefferson City to Hermann",
+          "distance": "38 miles",
+          "time": "8-10 hours",
+          "difficulty": "Intermediate",
+          "putIn": "Jefferson City Access",
+          "takeOut": "Hermann Riverfront",
+          "notes": "Multi-day trip with camping options"
+        },
+        {
+          "name": "Kansas City to Lexington",
+          "distance": "45 miles",
+          "time": "10-12 hours",
+          "difficulty": "Advanced",
+          "putIn": "Kansas City River Market",
+          "takeOut": "Lexington Landing",
+          "notes": "Urban to rural transition, strong currents"
+        }
+      ],
+      "accessPoints": [
+        {
+          "name": "St. Charles Riverfront Access",
+          "lat": 38.7881,
+          "lng": -90.4974,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms", "Historic District"],
+          "address": "Riverfront Trail, St. Charles, MO 63301"
+        },
+        {
+          "name": "Washington Riverfront Park",
+          "lat": 38.5581,
+          "lng": -91.0129,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms", "Picnic Area"],
+          "address": "Riverfront Park, Washington, MO 63090"
+        },
+        {
+          "name": "Hermann Riverfront",
+          "lat": 38.7042,
+          "lng": -91.4370,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms", "Wineries", "Historic Town"],
+          "address": "Riverfront Dr, Hermann, MO 65041"
+        },
+        {
+          "name": "Jefferson City Access",
+          "lat": 38.5767,
+          "lng": -92.1735,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms", "State Capitol Views"],
+          "address": "Missouri River Access, Jefferson City, MO 65101"
+        },
+        {
+          "name": "Boonville Access",
+          "lat": 38.9736,
+          "lng": -92.7432,
+          "amenities": ["Parking", "Boat Ramp", "Camping", "Historic Sites"],
+          "address": "Katy Trail State Park, Boonville, MO 65233"
+        },
+        {
+          "name": "Kansas City River Market",
+          "lat": 39.1142,
+          "lng": -94.5783,
+          "amenities": ["Parking", "Boat Ramp", "Restrooms", "Urban Access"],
+          "address": "River Market, Kansas City, MO 64108"
+        },
+        {
+          "name": "Lexington Landing",
+          "lat": 39.1867,
+          "lng": -93.8782,
+          "amenities": ["Parking", "Boat Ramp", "Historic Battle Sites"],
+          "address": "Lexington Landing, Lexington, MO 64067"
+        },
+        {
+          "name": "Napoleon Access",
+          "lat": 39.1234,
+          "lng": -94.0567,
+          "amenities": ["Parking", "Boat Ramp", "Fishing"],
+          "address": "Napoleon Bend Access, Napoleon, MO 64074"
+        }
+      ],
+      "waterLevel": {
+        "current": 12.5,
+        "optimal": "8-18 feet",
+        "status": "optimal"
+      },
+      "crowdLevel": "Low to Moderate"
     },
     {
       "id": "elk-river",

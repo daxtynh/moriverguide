@@ -2,98 +2,156 @@
 // These are high-volume, high-intent keywords to target
 
 export const primaryKeywords = {
-  // Main target: 5,400 searches/month
-  main: 'missouri float trips',
+  // Main targets: Broader water sports coverage
+  main: 'missouri river trips',
+  secondary: ['missouri float trips', 'missouri kayaking', 'missouri canoeing', 'missouri rafting'],
   
-  // River-specific (high volume)
+  // River-specific (high volume) - Multi-sport targeting
   rivers: {
     'current-river': {
       primary: 'current river float trips',
-      secondary: ['current river missouri', 'float current river', 'current river canoe rental'],
-      volume: 2900
+      secondary: ['current river kayaking', 'current river canoeing', 'current river missouri', 'float current river', 'current river canoe rental', 'current river kayak rental'],
+      volume: 2900,
+      sports: ['floating', 'kayaking', 'canoeing', 'tubing']
     },
     'meramec-river': {
       primary: 'meramec river float trips',
-      secondary: ['meramec river missouri', 'meramec river canoe', 'meramec state park floating'],
-      volume: 1600
+      secondary: ['meramec river kayaking', 'meramec river canoeing', 'meramec river missouri', 'meramec river canoe', 'meramec state park floating', 'meramec kayak rental'],
+      volume: 1600,
+      sports: ['floating', 'kayaking', 'canoeing', 'rafting']
     },
     'niangua-river': {
       primary: 'niangua river float trips',
-      secondary: ['niangua river missouri', 'bennett spring float trips', 'niangua river canoe'],
-      volume: 880
+      secondary: ['niangua river kayaking', 'niangua river canoeing', 'niangua river missouri', 'bennett spring float trips', 'niangua river canoe', 'niangua kayak rental'],
+      volume: 880,
+      sports: ['floating', 'kayaking', 'canoeing']
     },
     'jacks-fork-river': {
       primary: 'jacks fork river float trips',
-      secondary: ['jacks fork missouri', 'jacks fork canoe rental', 'eminence mo float trips'],
-      volume: 720
+      secondary: ['jacks fork kayaking', 'jacks fork canoeing', 'jacks fork missouri', 'jacks fork canoe rental', 'eminence mo float trips', 'jacks fork kayak rental'],
+      volume: 720,
+      sports: ['floating', 'kayaking', 'canoeing']
     },
     'eleven-point-river': {
       primary: 'eleven point river float trips',
-      secondary: ['eleven point river missouri', 'greer spring float', 'eleven point canoe'],
-      volume: 590
+      secondary: ['eleven point kayaking', 'eleven point canoeing', 'eleven point river missouri', 'greer spring float', 'eleven point canoe', 'eleven point kayak rental'],
+      volume: 590,
+      sports: ['floating', 'kayaking', 'canoeing']
     },
     'elk-river': {
       primary: 'elk river float trips',
-      secondary: ['elk river missouri', 'pineville mo float trips', 'elk river canoe'],
-      volume: 480
+      secondary: ['elk river kayaking', 'elk river canoeing', 'elk river missouri', 'pineville mo float trips', 'elk river canoe', 'elk river kayak rental'],
+      volume: 480,
+      sports: ['floating', 'kayaking', 'canoeing']
+    },
+    'missouri-river': {
+      primary: 'missouri river float trips',
+      secondary: ['missouri river kayaking', 'missouri river canoeing', 'missouri river paddling', 'missouri river missouri', 'big muddy river trips', 'missouri river boating', 'missouri river kansas city', 'missouri river st charles'],
+      volume: 1200,
+      sports: ['floating', 'kayaking', 'canoeing', 'paddling', 'boating']
     }
   },
   
-  // Location-based
+  // Location-based - Multi-sport targeting
   locations: [
+    'kayaking near st louis',
+    'canoeing near kansas city', 
     'float trips near st louis',
     'float trips near kansas city',
+    'ozark kayaking trips',
     'ozark float trips',
     'missouri ozarks river trips',
+    'missouri ozarks kayaking',
+    'southeast missouri paddling',
     'southeast missouri float trips'
   ],
   
-  // Intent-based
+  // Intent-based - Broader water sports
   intents: {
-    diy: ['diy float trip missouri', 'self guided float missouri', 'plan your own float trip'],
-    family: ['family float trips missouri', 'kid friendly float trips', 'easy float trips missouri'],
-    camping: ['float trip camping missouri', 'overnight float trips', 'multi day float missouri'],
-    groups: ['group float trips missouri', 'large group river trips', 'corporate float trips']
+    diy: ['diy kayak trip missouri', 'diy float trip missouri', 'self guided paddling missouri', 'self guided float missouri', 'plan your own float trip', 'plan your own kayak trip'],
+    family: ['family kayaking missouri', 'family float trips missouri', 'kid friendly paddling', 'kid friendly float trips', 'easy kayaking missouri', 'easy float trips missouri'],
+    camping: ['kayak camping missouri', 'float trip camping missouri', 'overnight paddling trips', 'overnight float trips', 'multi day kayaking missouri', 'multi day float missouri'],
+    groups: ['group kayaking missouri', 'group float trips missouri', 'large group paddling trips', 'large group river trips', 'corporate kayaking trips', 'corporate float trips']
   },
   
-  // Seasonal
+  // Seasonal - Multi-sport
   seasonal: {
-    summer: ['summer float trips missouri', 'best time to float missouri rivers', 'july float trips'],
-    spring: ['spring float trips missouri', 'april may float trips', 'memorial day float'],
-    fall: ['fall float trips missouri', 'september october floating', 'autumn river trips']
+    summer: ['summer kayaking missouri', 'summer float trips missouri', 'best time to kayak missouri rivers', 'best time to float missouri rivers', 'july kayaking trips', 'july float trips'],
+    spring: ['spring kayaking missouri', 'spring float trips missouri', 'april may kayaking trips', 'april may float trips', 'memorial day paddling', 'memorial day float'],
+    fall: ['fall kayaking missouri', 'fall float trips missouri', 'september october kayaking', 'september october floating', 'autumn paddling trips', 'autumn river trips']
   },
   
-  // Informational (for blog content)
+  // Informational (for blog content) - Broader coverage
   informational: [
+    'what to bring kayaking',
     'what to bring on a float trip',
     'missouri river water levels',
+    'kayaking safety tips',
     'float trip safety tips',
+    'best missouri rivers for kayaking',
     'best missouri rivers for floating',
-    'how to plan a float trip'
+    'how to plan a kayak trip',
+    'how to plan a float trip',
+    'canoe vs kayak missouri rivers',
+    'beginner kayaking missouri'
   ]
 };
 
 // LSI Keywords (Latent Semantic Indexing) - related terms Google expects
 export const lsiKeywords = [
+  // Equipment & Rentals
   'canoe rental',
   'kayak rental',
   'raft rental',
+  'paddleboard rental',
+  'sup rental missouri',
   'river tubing',
+  'inner tube rental',
+  
+  // Services & Logistics
   'shuttle service',
+  'paddling shuttle',
   'access points',
   'put in take out',
+  'launch sites',
+  'boat ramps',
+  
+  // Conditions & Planning
   'water levels',
   'river conditions',
+  'paddling conditions',
   'float time',
+  'trip duration',
+  'river flow',
+  'current speed',
+  
+  // Activities & Features
   'river camping',
+  'paddle camping',
   'gravel bars',
   'swimming holes',
+  'fishing spots',
+  'wildlife viewing',
+  
+  // Geography & Environment
   'spring fed rivers',
   'clear water',
   'scenic rivers',
+  'whitewater',
+  'calm water paddling',
   'ozark national scenic riverways',
   'mark twain national forest',
-  'missouri conservation areas'
+  'missouri conservation areas',
+  'missouri state parks',
+  
+  // Skill Levels & Types
+  'beginner kayaking',
+  'family paddling',
+  'easy float trips',
+  'whitewater kayaking',
+  'recreational paddling',
+  'touring kayaks',
+  'sit on top kayaks'
 ];
 
 // Type definitions for schema templates

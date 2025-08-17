@@ -453,6 +453,66 @@ export const USGS_SITES: Record<string, RiverSites> = {
         optimalRange: [2.5, 6.0]
       }
     ]
+  },
+  'missouri-river': {
+    name: 'Missouri River',
+    sites: [
+      {
+        id: '06934500',
+        name: 'Missouri River at Hermann',
+        location: 'Hermann, MO',
+        lat: 38.7042,
+        lng: -91.4370,
+        floodStage: 25.0,
+        actionStage: 20.0,
+        minorFloodStage: 22.0,
+        optimalRange: [8.0, 18.0]
+      },
+      {
+        id: '06935965',
+        name: 'Missouri River at St. Charles',
+        location: 'St. Charles, MO',
+        lat: 38.7881,
+        lng: -90.4974,
+        floodStage: 30.0,
+        actionStage: 25.0,
+        minorFloodStage: 27.0,
+        optimalRange: [10.0, 20.0]
+      },
+      {
+        id: '06909000',
+        name: 'Missouri River at Boonville',
+        location: 'Boonville, MO',
+        lat: 38.9736,
+        lng: -92.7432,
+        floodStage: 32.0,
+        actionStage: 27.0,
+        minorFloodStage: 29.0,
+        optimalRange: [12.0, 22.0]
+      },
+      {
+        id: '06934000',
+        name: 'Missouri River at Jefferson City',
+        location: 'Jefferson City, MO',
+        lat: 38.5767,
+        lng: -92.1735,
+        floodStage: 28.0,
+        actionStage: 23.0,
+        minorFloodStage: 25.0,
+        optimalRange: [10.0, 18.0]
+      },
+      {
+        id: '06893000',
+        name: 'Missouri River at Kansas City',
+        location: 'Kansas City, MO',
+        lat: 39.1142,
+        lng: -94.5783,
+        floodStage: 32.0,
+        actionStage: 28.0,
+        minorFloodStage: 30.0,
+        optimalRange: [15.0, 25.0]
+      }
+    ]
   }
 };
 
