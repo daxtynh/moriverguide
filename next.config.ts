@@ -49,14 +49,14 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*',
+        source: '/(.*)',
         has: [
           {
             type: 'host',
             value: 'www.moriverguide.com',
           },
         ],
-        destination: 'https://moriverguide.com/:path*',
+        destination: 'https://moriverguide.com/$1',
         permanent: true,
       },
     ];
